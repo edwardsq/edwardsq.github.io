@@ -286,6 +286,10 @@ body
     .portfolio-entry{
         background-size: 200px;
     }
+    .portfolio-entry:hover .overlay
+    {
+        height:100% !important;
+    }
 }
 
 #hline{
@@ -338,8 +342,9 @@ a:visited
 
 @media screen and (min-width: 1200px){
     #intro-pic{
-        width:100vh;
+        width:100vw;
         height: auto;
+        object-fit: cover;
     }
 }
 
