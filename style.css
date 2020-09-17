@@ -283,6 +283,9 @@ body
         padding-top: 4px;
     }
     .hamburger{display: inline-block;}
+    .portfolio-entry{
+        background-size: 200px;
+    }
 }
 
 #hline{
