@@ -18,9 +18,19 @@
             });
             });
         </script>
+        <script>
+            $(document).ready(function(){
+            var $hamburger = $(".hamburger");
+            $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+            });
+            });
+          </script>
         <script src="/js/fadeandtypingscript.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="images/QE Logo Circle.png" />    
+        <link rel="shortcut icon" href="images/QE Logo Circle.png" />
+        <link href="dist/hamburgers.css" rel="stylesheet"> 
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=PT+Serif:ital@1&display=swap" rel="stylesheet">	
@@ -50,6 +60,11 @@
         <div class="header-universal">
             <div class="header-background"></div>
             <a href="#home"><img src="images/QE Logo Trans.png" class="logo-image"></a>
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
         </div>
         <a name="home"><section class="splash">
             <div class="intro-wrapper">

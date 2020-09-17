@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 10) {
+        if ($(document).scrollTop() > 30) {
             $(".header-background").addClass("scrolled");
         } else {
             $(".header-background").removeClass("scrolled");
