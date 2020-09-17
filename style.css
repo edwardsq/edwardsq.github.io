@@ -64,6 +64,11 @@ html{
     background-color: white;
 }
 
+.scrolled-p
+{
+    color:black !important;
+}
+
 .hamburger.scrolled-m .hamburger-inner,
   .hamburger.scrolled-m .hamburger-inner::before,
   .hamburger.scrolled-m .hamburger-inner::after {
@@ -404,6 +409,11 @@ a:visited
     z-index: 0;
     color: white;
     transition:opacity 0.7s;
+    -webkit-transition: color 700ms linear;
+    -moz-transition: color 700ms linear;
+    -o-transition: color 700ms linear;
+    -ms-transition: color 700ms linear;
+    transition: color 700ms linear;
 }
 
 #pointer-contact
@@ -420,6 +430,11 @@ a:visited
     z-index: 10;
     color: white;
     transition:opacity 0.7s;
+    -webkit-transition: color 700ms linear;
+    -moz-transition: color 700ms linear;
+    -o-transition: color 700ms linear;
+    -ms-transition: color 700ms linear;
+    transition: color 700ms linear;
 }
 
 .portfolio

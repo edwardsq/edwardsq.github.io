@@ -1,11 +1,15 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 30) {
+        if ($(document).scrollTop() > 40) {
             $(".header-background").addClass("scrolled");
             $(".hamburger").addClass("scrolled-m");
+            $(".rotate-left").addClass("scrolled-p");
+            $(".rotate-right").addClass("scrolled-p");
         } else {
             $(".header-background").removeClass("scrolled");
             $(".hamburger").removeClass("scrolled-m");
+            $(".rotate-left").removeClass("scrolled-p");
+            $(".rotate-right").removeClass("scrolled-p");
         }
     });
 });
