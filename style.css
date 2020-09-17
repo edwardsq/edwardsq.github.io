@@ -37,12 +37,22 @@ html{
 
 .header-background
 {
-    background-color:white;
+    background-color:none;
     opacity: 100%;
     width: 100%;
     height:inherit;
     position: absolute;
     z-index: 3;
+    -webkit-transition: background-color 700ms linear;
+    -moz-transition: background-color 700ms linear;
+    -o-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+}
+
+.scrolled
+{
+    background-color: white;
 }
 
 .logo-image
@@ -62,6 +72,7 @@ body
 {
     padding:0px;
     margin:0px;
+    width: 100%;
     background-color:white;
     overflow-x: auto;
 }
@@ -71,20 +82,20 @@ body
     width:70%;
     height:100vh;
     position: absolute;
-    z-index: -1;
-    display: inline-block;
+    z-index: 5;
+    display: block;
     text-align: center;
 }
 
 .intro-main
 {
     position: absolute;
-    height: 50%;
-    width: 75%;
-    top:25%;
+    height: 350px;
+    width: 725px;
+    bottom:25%;
     left:15%;
     z-index: 2;
-    background-color: #012169;
+    background-color: #00031a;
 }
 
 .intro-shader
@@ -103,31 +114,154 @@ body
     padding-left:30px;
     padding-top:50px;
     margin:auto;
-    font-family: 'Cabin', sans-serif;
-    font-size: 50px; 	
-    line-height: 60px;
+    font-family: 'Lora', serif;
     color:white;
 }
 
 #first-line
 {
-    font-family: 'Cabin', sans-serif;
-    font-size: 70px; 	
-    line-height: 70px;
+    font-family: 'Playfair Display', serif;
+    font-size: 90px; 	
+    line-height: 60px;
     color:white;
 }
 
-#pointer-portfolio:hover
+#pronun
+{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    line-height: 80px;
+}
+
+#noun
+{
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    line-height: 80px;
+}
+
+#defs
+{
+    text-align: left;
+    padding-left:30px;
+    padding-top:10px;
+    margin:auto;
+    font-family: 'Lora', serif;
+    font-size: 45px; 	
+    line-height: 80px;
+    color:white;
+}
+
+@media screen and (max-width: 900px)
+{
+    .intro-wrapper{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .intro-main{
+        height: 300px;
+        width: 600px;
+        margin: auto !important;
+        top: unset;
+        left: unset;
+        bottom: 15%;
+        display: block;
+    }
+    #first-line{
+        font-size: 77px;
+        line-height: 51px;
+    }
+    #pronun, #noun{
+        line-height: 80px;
+        font-size: 21px;
+    }
+    #defs{
+        font-size: 34px;
+        line-height: 68px;
+        padding-left: 26px;
+        padding-top: 6px;
+    }
+}
+
+/*Small Media (Phone Portrait)*/
+@media screen and (max-width: 600px)
+{
+    #pointer-portfolio-main{
+        display:none;
+    }
+    #pointer-about{
+        display:none;
+    }
+    #pointer-contact{
+        display: none;
+    }
+    .intro-main{
+        height: 175px;
+        width: 362px;
+    }
+    .portfolio-entry{
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .intro-wrapper{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .intro-main{
+        width: 300px;
+        height: 250px; /*was 145px*/
+        margin: auto !important;
+        top: unset;
+        bottom: 10%;
+        left: unset;
+        display: block;
+    }
+    #first-line{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    #intro{
+        padding-top: 25px;
+        margin-bottom:10px;
+    }
+    #pronun, #noun{
+        line-height: 40px;
+        font-size: 12px;
+    }
+    #defs{
+        font-size: 20px;
+        line-height: 35px;
+        padding-left: 20px;
+        padding-top: 4px;
+    }
+}
+
+#hline{
+    flex-grow:1;
+    height: 1px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: gold;
+  }
+
+#pointer-portfolio-main:hover
 {
     opacity: 100%;
+    transition:opacity 0.7s;
 }
 #pointer-about:hover
 {
     opacity: 100%;
+    transition:opacity 0.7s;
 }
 #pointer-contact:hover
 {
     opacity: 100%;
+    transition:opacity 0.7s;
 }
 a:link
 {
@@ -141,14 +275,23 @@ a:visited
 {
     display: inline-block;
     position:fixed;
-    width:40%;
-    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
     margin:0px;
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: nowrap;
-    top:20%;
+    top:0%;
     right:0;
     z-index: -1;
+}
+
+@media screen and (min-width: 1200px){
+    #intro-pic{
+        width:100%;
+        height: auto;
+    }
 }
 
 .splash
@@ -158,6 +301,7 @@ a:visited
     height: 100vh;
     width: auto;
     position: relative;
+    overflow-x: hidden;
 }
 
 #pointer-portfolio-main
@@ -173,7 +317,9 @@ a:visited
     left:0;
     right:0;
     opacity:50%;
-    z-index: 0;
+    z-index: 10;
+    color: white;
+    transition:opacity 0.7s;
 }
 #pointer-portfolio
 {
@@ -187,6 +333,7 @@ a:visited
     top:50%;
     opacity:50%;
     z-index: 0;
+    color: white;
 }
 
 #pointer-about
@@ -201,6 +348,8 @@ a:visited
     top:50%;
     opacity:50%;
     z-index: 0;
+    color: white;
+    transition:opacity 0.7s;
 }
 
 #pointer-contact
@@ -214,7 +363,9 @@ a:visited
     position: fixed;
     top:50%;
     opacity:50%;
-    z-index: 0;
+    z-index: 10;
+    color: white;
+    transition:opacity 0.7s;
 }
 
 .portfolio
@@ -226,6 +377,8 @@ a:visited
     padding-top:100px;
     padding-bottom: 100px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .portfolio-entry
@@ -377,4 +530,24 @@ a:visited
       line-height: 60px;
       text-align: center;
       color:white
+  }
+  .aboutvid
+  {
+      width: 35%;
+      margin-top:15%;
+      margin-left:12%;
+      display: inline-block;
+  }
+  .vl
+  {
+      border-left: 6px solid black;
+      margin: 0;
+      padding: 0;
+      height:50%;
+      width:1px;
+  }
+  .abouttext
+  {
+      display:inline-block;
+      width: 50%;
   }
