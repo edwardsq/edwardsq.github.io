@@ -21,8 +21,16 @@
         <script>
             $(document).ready(function(){
             var $hamburger = $(".hamburger");
+            var $menu = $(".menu");
+            var $alreadyhere = $(".already-here");
             $hamburger.on("click", function(e) {
             $hamburger.toggleClass("is-active");
+            $menu.fadeToggle().css("display","flex");
+            // Do something else, like open/close menu
+            });
+            $alreadyhere.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $menu.fadeToggle().css("display","flex");
             // Do something else, like open/close menu
             });
             });
@@ -65,6 +73,11 @@
                   <span class="hamburger-inner"></span>
                 </span>
               </button>
+        </div>
+        <div class="menu">
+            <p><a href="#portfolio"><span class="already-here">PORTFOLIO</span></a><br>
+            <a href="aboutme.html">ABOUT ME</a><br>
+            <a href="contactme.html">CONTACT</a></p>
         </div>
         <a name="home"><section class="splash">
             <div class="intro-wrapper">

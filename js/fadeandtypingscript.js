@@ -2,8 +2,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > 30) {
             $(".header-background").addClass("scrolled");
+            $(".hamburger").addClass("scrolled-m");
         } else {
             $(".header-background").removeClass("scrolled");
+            $(".hamburger").removeClass("scrolled-m");
         }
     });
 });
