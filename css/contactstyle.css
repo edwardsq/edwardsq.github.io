@@ -28,6 +28,7 @@
     background-color: #030040;
     position: relative;
     display: inline-block;
+    color: white;
 }
 
 .hex:after {
