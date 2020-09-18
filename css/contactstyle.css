@@ -45,3 +45,10 @@
 .hex-row.even {
     margin-left: 53px;
 }
+
+.contact-logo{
+    height: 60px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
