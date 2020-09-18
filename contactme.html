@@ -11,11 +11,31 @@
         <script>
         $(document).ready(function(){
                 $(".doc-loader").fadeOut();
+                $(".hamburger").addClass("scrolled-m")
             });
         </script>
+        <script>
+            $(document).ready(function(){
+            var $hamburger = $(".hamburger");
+            var $menu = $(".menu");
+            var $alreadyhere = $(".already-here");
+            $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $menu.fadeToggle().css("display","flex");
+            // Do something else, like open/close menu
+            });
+            $alreadyhere.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $menu.fadeToggle().css("display","flex");
+            // Do something else, like open/close menu
+            });
+            });
+          </script>
         <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="images/QE Logo Circle.png" />    
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>	
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='css/contactstyle.css' />
+        <link href="dist/hamburgers.css" rel="stylesheet">
         <!-- <link rel="stylesheet" type="text/css"  href='css/clear.css' />
         <link rel="stylesheet" type="text/css"  href='css/common.css' />
         <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
@@ -41,9 +61,45 @@
         </table>
         <div class="header-universal">
             <div class="header-background"></div>
-            <a href="index.html"><img src="images/QE Logo Trans.png" class="logo-image"></a>
+            <a href="#home"><img src="images/QE Logo Trans.png" class="logo-image"></a>
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
         </div>
-        <a href="aboutme.html"><div class = "rotate-right" id="pointer-about">About Me<br>&#9660</div></a>
-        <a href="index.html#portfolio"><div class = "rotate-left" id="pointer-portfolio">Portfolio<br>&#9660</div></a>
+        <div class="menu">
+            <p><a href="#portfolio"><span class="already-here">PORTFOLIO</span></a><br>
+            <a href="aboutme.html">ABOUT ME</a><br>
+            <a href="contactme.html">CONTACT</a></p>
+        </div>
+        <div class="content-container">
+            <div class="hex-container">
+                <div class="hex-row even">
+                    <div class="hex"></div>
+                    <div class="hex"></div>
+                </div>
+                <div class="hex-row">
+                    <div class="hex"></div>
+                    <div class="hex"></div>
+                    <div class="hex"></div>
+                </div>
+                <div class="hex-row even">
+                    <div class="hex"></div>
+                    <div class="hex"></div>
+                </div>
+                <div class="hex-row">
+                    <div class="hex"></div>
+                    <div class="hex"></div>
+                    <div class="hex"></div>
+                </div>
+                <div class="hex-row even">
+                    <div class="hex"></div>
+                    <div class="hex"></div>
+                </div>
+            </div>
+        </div>
+        <a href="aboutme.html"><div class = "rotate-right scrolled-p" id="pointer-about">About Me<br>&#9660</div></a>
+        <a href="index.html#portfolio"><div class = "rotate-left scrolled-p" id="pointer-portfolio">Portfolio<br>&#9660</div></a>
     </body>
 </html>
