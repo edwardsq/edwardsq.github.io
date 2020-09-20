@@ -9,13 +9,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>
-        $(document).ready(function(){
-                $(".doc-loader").fadeOut();
-            });
-        </script>
+            $(document).ready(function(){
+                    $(".doc-loader").fadeOut();
+                    $(".hamburger").addClass("scrolled-m")
+                    $(".header-background").addClass("scrolled")
+                });
+            </script>
+            <script>
+                $(document).ready(function(){
+                var $hamburger = $(".hamburger");
+                var $menu = $(".menu");
+                var $alreadyhere = $(".already-here");
+                $hamburger.on("click", function(e) {
+                $hamburger.toggleClass("is-active");
+                $menu.fadeToggle().css("display","flex");
+                // Do something else, like open/close menu
+                });
+                $alreadyhere.on("click", function(e) {
+                $hamburger.toggleClass("is-active");
+                $menu.fadeToggle().css("display","flex");
+                // Do something else, like open/close menu
+                });
+                });
+              </script>
         <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="images/QE Logo Circle.png" />    
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>	
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="dist/hamburgers.css" rel="stylesheet">
         <!-- <link rel="stylesheet" type="text/css"  href='css/clear.css' />
         <link rel="stylesheet" type="text/css"  href='css/common.css' />
         <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
@@ -23,6 +44,7 @@
         <link rel="stylesheet" type="text/css"  href='css/animated-headline.css' />        
         <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />         -->
         <link rel="stylesheet" type="text/css"  href='style.css' />
+        <link rel="stylesheet" type="text/css"  href='css/aboutstyle.css' />
 
         <!--[if lt IE 9]>
                 <script src="js/html5shiv.js"></script>                
@@ -41,9 +63,40 @@
         </table>
         <div class="header-universal">
             <div class="header-background"></div>
-            <a href="index.html"><img src="images/QE Logo Trans.png" class="logo-image"></a>
+            <a href="#home"><img src="images/QE Logo Trans.png" class="logo-image"></a>
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
         </div>
-        <a href="contactme.html"><div class = "rotate-left" id="pointer-contact">Contact<br>&#9660</div></a>
-        <a href="index.html#portfolio"><div class = "rotate-right" id="pointer-portfolio">Portfolio<br>&#9660</div></a>
+        <div class="menu">
+            <p><a href="index.html#portfolio">PORTFOLIO</span></a><br>
+            <span class="already-here">ABOUT ME</span><br>
+            <a href="contactme.html">CONTACT</a></p>
+        </div>
+
+        
+        <div class="timeline-container"><img class="timeline" src="images/timelinesimple.png"></div>
+        
+        <div class="about-main">
+            <h1>The Story So Far...</h1>
+            <h2><i>"I am very small, and I have no money, so you can imagine the kind of pressure I am under"<br>-John Mulaney</i></h2>
+            <p class="about-story">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac urna ullamcorper, viverra enim ut, vulputate nisl. Donec molestie, justo vitae rutrum vulputate, orci eros porta mauris, at rutrum tellus mi sit amet ante. Duis sed orci quis ipsum dictum posuere dictum ut mauris. Praesent malesuada bibendum lectus sed dignissim. Morbi sed placerat mi, ac feugiat sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In eget risus diam. Maecenas feugiat pharetra sapien at bibendum. Etiam rutrum sagittis orci, sed volutpat sapien dictum vitae. Nunc in erat vitae eros feugiat efficitur eget eget metus. Sed non sapien non lorem convallis condimentum.
+
+                Integer eu viverra ligula. Aenean accumsan eget diam sit amet congue. Vestibulum elementum, velit egestas elementum ullamcorper, purus lectus ornare justo, nec dictum purus elit dictum urna. Nunc iaculis rutrum mattis. Nam imperdiet, nisi in convallis dapibus, lacus purus mattis elit, non lacinia est est luctus urna. Nam consectetur vehicula interdum. Nullam hendrerit accumsan ornare. Quisque ut dui volutpat, sagittis felis et, dapibus diam. Maecenas scelerisque at metus a finibus. Cras lacinia et ipsum quis mattis.
+                
+                Proin nec sapien laoreet, pretium purus vel, pretium mi. Nam sit amet diam consequat, fringilla ex at, aliquam augue. In aliquam congue felis, eget gravida nibh auctor vitae. Fusce urna felis, sollicitudin fringilla eros vel, dictum fringilla turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi venenatis euismod porttitor. Aliquam quam justo, porttitor sed augue in, tincidunt viverra purus. Sed posuere enim vel tellus tristique, a imperdiet erat luctus. Nunc at lacus vitae odio consectetur dictum.
+                
+                Vivamus porta fermentum blandit. Mauris laoreet eget magna tincidunt tempus. Fusce et est elit. Donec ut dignissim elit. In suscipit magna eget ex maximus, id convallis urna iaculis. Fusce quis tellus pulvinar, ornare orci pretium, rhoncus urna. Sed eu lorem tincidunt, facilisis elit at, elementum ligula. Praesent mauris odio, ultricies at vestibulum ac, auctor vitae enim. Integer varius metus vitae vulputate iaculis. Suspendisse elementum sollicitudin massa et sagittis. Maecenas vestibulum urna non elit vehicula, feugiat hendrerit ex tristique.
+                
+                Quisque nibh nibh, hendrerit ut lacinia et, pulvinar nec velit. Mauris et ligula lacinia, tristique orci ac, molestie ligula. Nunc magna odio, blandit non iaculis ac, tincidunt malesuada lorem. Praesent non nisl justo. Cras luctus est vitae eleifend hendrerit. Ut id elementum leo. Etiam viverra accumsan ligula id aliquam. Morbi ipsum orci, tempus vitae nisl non, fermentum scelerisque ex.
+            </p>
+        </div>
+
+        <a href="contactme.html"><div class = "rotate-left scrolled-p" id="pointer-contact">Contact<br>&#9660</div></a>
+        <a href="index.html#portfolio"><div class = "rotate-right scrolled-p" id="pointer-portfolio">Portfolio<br>&#9660</div></a>
+        
     </body>
 </html>

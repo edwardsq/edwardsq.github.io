@@ -1,0 +1,55 @@
+.timeline-container{
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-right: 0;
+    padding-top: 100px;
+    width: 100px;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.timeline{
+    top:0;
+    width: inherit;
+    height: auto;
+}
+
+.about-main{
+    display: inline-block;
+    position: absolute;
+    margin-top: 100px;
+    vertical-align: top;
+    padding-left: 10%;
+    padding-top: 0px;
+    padding-right: 10%;
+    overflow: hidden;
+    white-space: wrap;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}
+.about-story{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px)
+{
+    h1{font-size: 40px;}
+    h2{font-size: 22px;}
+    .timeline-container{
+        width: 50px;
+    }
+}
