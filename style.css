@@ -280,6 +280,11 @@ body
         padding-top: 25px;
         margin-bottom:10px;
     }
+    #intro-pic{
+        right:calc(50% - 420px) !important;
+        bottom: 0 !important;
+        height: 120vh !important;
+    }
     #pronun, #noun{
         line-height: 40px;
         font-size: 12px;
@@ -342,14 +347,14 @@ a:visited
     display: inline-block;
     position:fixed;
     width: auto;
-    min-width: 100vh;
+    min-width: 110vh;
     min-height: 100vh;
-    height: 100vh;
+    height: 110vh;
     margin:0px;
     overflow-x: hidden;
     white-space: nowrap;
-    top:0%;
-    right:0;
+    bottom:-10%;
+    right: 0;
     z-index: -1;
 }
 
