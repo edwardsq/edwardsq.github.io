@@ -504,6 +504,36 @@ a:visited
     background-repeat: no-repeat;
     background-position: top;
 }
+#tank
+{
+    background-image: url("images/tank_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#rocket-car
+{
+    background-image: url("images/rcar_square_1.png");
+    background-repeat: no-repeat;   
+    background-position: top;
+}
+#bayes
+{
+    background-image: url("images/bayes_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#website
+{
+    background-image: url("images/website_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#test-stand
+{
+    background-image: url("images/thrust_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
 .portfolio-entry:hover .overlay
 {
     height:20%;
@@ -598,7 +628,7 @@ a:visited
   .footer
   {
       height:60px;
-      background-color: #012169;
+      background-color:  #030040;
       width: auto;
   }
   #copyright
