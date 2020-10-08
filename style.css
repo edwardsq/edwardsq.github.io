@@ -534,6 +534,24 @@ a:visited
     background-repeat: no-repeat;
     background-position: top;
 }
+#prints
+{
+    background-image: url("images/3dprint_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#hexlights
+{
+    background-image: url("images/hexlights_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#flyak
+{
+    background-image: url("images/flyak_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
 .portfolio-entry:hover .overlay
 {
     height:20%;
