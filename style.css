@@ -552,6 +552,30 @@ a:visited
     background-repeat: no-repeat;
     background-position: top;
 }
+#frc
+{
+    background-image: url("images/sciborgs_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#tube
+{
+    background-image: url("images/tube_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#battlebot
+{
+    background-image: url("images/battlebot_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#part107
+{
+    background-image: url("images/dronephoto_square_1.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
 .portfolio-entry:hover .overlay
 {
     height:20%;

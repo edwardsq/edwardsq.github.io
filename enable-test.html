@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"  href='css/enable.css' />
+    <link rel="stylesheet" type="text/css"  href='style.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="/js/fadeandtypingscript.js"></script>
+    <script src="/js/isInViewport.js"></script>
+    <script>
+        var videos = document.getElementsByTagName("video");
+
+function checkScroll() {
+    var fraction = 0.8; // Play when 80% of the player is visible.
+
+    for(var i = 0; i < videos.length; i++) {
+
+        var video = videos[i];
+
+        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+            b = y + h, //bottom
+            visibleX, visibleY, visible;
+
+            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+            visible = visibleX * visibleY / (w * h);
+
+            if (visible > fraction) {
+                video.play();
+            } else {
+                video.pause();
+            }
+
+    }
+
+}
+
+window.addEventListener('scroll', checkScroll, false);
+window.addEventListener('resize', checkScroll, false);
+    </script>
+    <title>Duke Enable</title>
+    <link rel="shortcut icon" href="images/QE Logo Circle.png" />
+  </head>
+  <body>
+    
+    <div class="header-universal">
+      <div class="header-background"></div>
+      <a href="index.html#portfolio"><div class="back-button">&#11104</div></a>
+      <a href="index.html"><img src="images/QE Logo Trans.png" class="logo-image"></a>
+      <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+  </div>
+
+    <div class="proj-splash">
+      <div class="proj-splash-desc">
+        <h1>DUKE ENABLE</h1>
+        <div class="abstract">
+          <p>Duke Enable harnesses the power and resources of Duke engineers to provide custom, purpose built 3D printed prosthetics and adaptive devices to members of the Durham community free of charge.</p>
+        </div>
+      </div>
+      <div class="proj-splash-features">
+        <div class="features-wrapper"><h4>PROJECT FEATURES</h4></div>
+        <div class="feature">
+          <img src="/images/Parametric Template.png" class="feature-icon">
+          <div class="feature-name">Parametric Design</div>
+        </div>
+        <div class="feature">
+          <img src="/images/3D Printing Icon.png" class="feature-icon">
+          <div class="feature-name">3D Printing</div>
+        </div>
+        <div class="feature">
+          <img src="/images/Durham Icon.png" class="feature-icon">
+          <div class="feature-name">Serving the Durham Community</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-splash-desc">
+        <h1>DUKE ENABLE</h1>
+        <div class="abstract">
+            <p>Duke Enable harnesses the power and resources of Duke engineers to provide custom, purpose built 3D printed prosthetics and adaptive devices to members of the Durham community free of charge.</p>
+          </div>
+    </div>
+    <div class="mobile-splash-features">
+        <div class="features-wrapper"><h4>PROJECT FEATURES</h4></div>
+        <div class="feature">
+          <img src="/images/Parametric Template.png" class="feature-icon">
+          <div class="feature-name">Parametric Design</div>
+        </div>
+        <div class="feature">
+          <img src="/images/3D Printing Icon.png" class="feature-icon">
+          <div class="feature-name">3D Printing</div>
+        </div>
+        <div class="feature">
+          <img src="/images/Durham Icon.png" class="feature-icon">
+          <div class="feature-name">Serving the Durham Community</div>
+        </div>
+    </div>
+    <div class="port-intro">
+        <h1>INTRO</h1>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md port-intro-text">
+                    The 3D Printing revolution has been a boon for makers worldwide, but perhaps an under appreciated implication of their proliferation has been on the differently abled members of our communities. For 6 year old Logan who was born without a right hand professional prosthetics had long been out of reach. Besides being prohibitively expensive, professional prosthetics have a relatively short shelf life for growing kids; imagine if you had to get a new medical device for your child as often as you get new clothes. <br> 
+                    The team printed versions of open source hand designs for Logan, but one of the additional advantages of 3D printing is our ability to create custom devices, and Logan didn't have to think twice before telling us what he wanted. For Halloween he was dressing up as Spiderman, his favorite superhero, and had seen a toy online that shot silly string "webs," but it required the use of your hand so Logan asked if we could make a custom one for him, a project I eagerly accepted.
+                </div>
+                <div class="col-md">
+                    <img src="/images/Logan Cute.jpg" class="port-intro-pic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="design-goals">
+      <h1>DESIGN GOALS</h1>
+      <div class="container"><div class="row">
+        <div class="col-md"><div class="gnd"><div class="goal-num">01&nbsp;</div><div class="goal-name">FIT</div></div>
+        No rubbing or discomfort
+        </div>
+        <div class="col-md"><div class="gnd"><div class="goal-num">02&nbsp;</div><div class="goal-name">FUNCTION</div></div>
+        Easily understandable and operable by a 6 year old
+        </div>
+        <div class="col-md"><div class="gnd"><div class="goal-num">03&nbsp;</div><div class="goal-name">EASE OF USE</div></div>
+        All adjustments or repairs done without access to tools
+        </div>
+      </div></div>
+    </div>
+
+    <div class="halves-desc left-img">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md">
+            <div class="story-img-container" id="param-left"></div>
+          </div>
+          <div class="col-md">
+            <h1>FULLY PARAMETRIC</h1>
+            <ul>
+                <li>43 individually adjustable parameters</li>
+                <li>Enables printing of multiple configurations for test fitting</li>
+                <li>Model can be easily modified as Logan grows</li>
+            </ul>
+            <!-- <p>I designed the web shooter to be fully parametric, so that any dimension could be changed independent of the rest of the model. In practice this meant that I could print out multiple versions of the device using different parameters before meeting with Logan, and then make smaller adjustments to whichever version had the best fit. This ensured that we were able to acheive a great fit from only a few meetings with Logan. Additionally, it means that as he grows, the device can easily be adjusted and reprinted to adust the fit.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="halves-desc right-img">
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <div class="col-md">
+              <h1>SIMPLE OPERATION</h1>
+                <ul>
+                    <li>Fires by straightening the elbow</li>
+                    <li>Easy for young kids to understand</li>
+                    <li>Makes you feel like Spiderman</li>
+                </ul>
+              <!-- <p>To start blasting away the bad guys, all Logan had to do is straighten his arm towards the enemy, just like Spideman would do. The device utilizes the increase in relative distance between your forearm and lower bicep as your elbow is starightened to create the pulling force necessary to trigger a can of commonly available silly string. While simple, the device is difficult to trigger accidentally, and could be tuned to ensure that it only fired when the elbow was completely straight.</p> -->
+            </div>
+            <div class="col-md">
+                <div class="story-img-container" id="ops-left"></div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="halves-desc left-img">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md">
+                <div class="story-img-container" id="assembly-right">
+                    <video height="400">
+                        <source src="/images/enable_assembly_reversed.mp4" type="video/mp4">
+                    </video>
+                </div>
+              </div>
+          <div class="col-md">
+            <h1>EASY ASSEMBLY</h1>
+            <ul>
+                <li>Can be assembled without tools in under 1 minute</li>
+                <li>Only 9 pieces</li>
+                <li>Easily repaired with spare parts in case of break</li>
+            </ul>
+            <!-- <p>The entire device can be put together without the use of any tools. Given how active young kids can be and the relative weakness of 3D printed parts, this meant that the team could print out multiple copies of every part on the final device and Logan's mom could make any necessary repairs quickly and easily to keep the fun going.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="halves-desc right-img">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md">
+                <div class="story-img-container" id="td-left"></div>
+            </div>
+            <div class="col-md">
+              <h1>TESTING & DELIVERY</h1>
+              <!-- <p>We had an absolute blast with Logan on delivery day and were thrilled when he immediately started blasting away, covering our conference room in silly string. The cherry on top is that we were able to deliver right before Halloween, so he was able to finish off his costume with a device that 6 year old me would be jealous of!</p> -->
+            </div>
+            <div class="col-md">
+              <div class="story-img-container" id="td-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="learn-more">
+        Want to Learn More?
+        <a href="contactme.html"><div class="contact-button">Contact Me</div></a>
+    </div>
+
+    <div class="gallery">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md no-pad">
+            <div class="gallery-img" id="img-1"><div class="gallery-num">01</div></div>
+          </div>
+          <div class="col-md no-pad">
+            <div class="gallery-img" id="img-2"><div class="gallery-num">02</div></div>
+          </div>
+          <div class="col-md">
+            <div class="gallery-img" id="img-3"><div class="gallery-num">03</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md no-pad">
+            <div class="gallery-img" id="img-4"><div class="gallery-num">04</div></div>
+          </div>
+          <div class="col-md no-pad">
+            <div class="gallery-img" id="img-5"><div class="gallery-num">05</div></div>
+          </div>
+          <div class="col-md">
+            <div class="gallery-img" id="img-6"><div class="gallery-num">06</div></div>
+          </div>
+          <div class="col-md">
+            <div class="gallery-img" id="img-7"><div class="gallery-num">07</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div id="copyright">Copyright 2020 Quinn Edwards.</div>
+    </section>
+  </body>
+</html>
