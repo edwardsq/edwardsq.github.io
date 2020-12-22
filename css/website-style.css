@@ -457,3 +457,12 @@ td{
     color: #030040;
     transition: 0.3s;
 }
+#project-img{
+    background-image: url("../images/project_img.PNG");
+}
+#topic-img{
+    background-image: url("../images/topic_img.PNG");
+}
+#home-img{
+    background-image: url("../images/homepage-img.PNG");
+}

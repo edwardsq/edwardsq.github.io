@@ -87,6 +87,10 @@ table {
     font-family: 'Open Sans', sans-serif;
     padding-top: 10px;
 }
+.inline-icon{
+    display: inline;
+    margin-bottom: 15px;
+}
 
 .mobile-splash-desc{
     display: none;
@@ -450,4 +454,13 @@ td{
     background-color: white;
     color: #030040;
     transition: 0.3s;
+}
+#durham-img{
+    background-image: url("../images/durham_gif.gif");
+}
+#germany-img{
+    background-image: url("../images/germay_gif.gif");
+}
+#brooklyn-img{
+    background-image: url("../images/brooklyn_gif.gif");
 }

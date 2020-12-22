@@ -34,7 +34,7 @@ table {
 .proj-splash{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/bandwdownscaled33.jpg");
+    background-image: url("../images/teststand_splash.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -450,4 +450,13 @@ td{
     background-color: white;
     color: #030040;
     transition: 0.3s;
+}
+#elec-img{
+    background-image: url("../images/teensy.jpg");
+}
+#cons-img{
+    background-image: url("../images/8020.jpg");
+}
+#data-img{
+    background-image: url("../images/arduino-serial-plotter.gif");
 }

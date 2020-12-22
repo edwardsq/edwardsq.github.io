@@ -34,10 +34,11 @@ table {
 .proj-splash{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/bandwdownscaled33.jpg");
+    background-image: url("../images/sd_splash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding-top: 100px;
     
 }
@@ -450,4 +451,29 @@ td{
     background-color: white;
     color: #030040;
     transition: 0.3s;
+}
+
+#hex-img{
+    background-image: url("../images/hexlights_square_1.png");
+}
+#lights-img-1{
+    background-image: url("../images/sd_lightspic.jpg");
+}
+#lights-img-2{
+    background-image: url("../images/sd_lightsvid.gif");
+}
+#blinds-img-1{
+    background-image: url("../images/sd_blinds.jpg");
+}
+#blinds-img-2{
+    background-image: url("../images/sd_blinds_elec.jpg");
+}
+#io-img{
+    background-image: url("../images/sd_io.PNG");
+}
+#dash-img{
+    background-image: url("../images/sd_dash.jpg");
+}
+#ifttt-img{
+    background-image: url("../images/sd_ifttt.PNG");
 }

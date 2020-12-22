@@ -451,3 +451,16 @@ td{
     color: #030040;
     transition: 0.3s;
 }
+
+#results-img{
+    background-image: url("../images/bayesian\ madness\ result.jpg");
+}
+#theorem-img{
+    background-image: url("../images/bayes_theorem.png");
+}
+#brier-img{
+    background-image: url("../images/bayes_brier_score.png");
+}
+#matchup-img{
+    background-image: url("../images/bayes_matchup.jpg");
+}

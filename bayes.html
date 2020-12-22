@@ -35,21 +35,21 @@
       <div class="proj-splash-desc">
         <h1>BAYESIAN MADNESS</h1>
         <div class="abstract">
-          <p>ay yo what's up #logang today we're going to be heading in the #japanesesuicideforest here in japan, but first of all make sure to smash that like button, share this video, and subscribe for more vlogs like this one right here, also make sure to follow me on twitter, instagram google +</p>
+          <p>A statisitcal model for the 2019 NCAA March Madness Tournament that correctly predicted the winner based on season performance.</p>
         </div>
       </div>
       <div class="proj-splash-features">
         <div class="features-wrapper"><h4>PROJECT FEATURES</h4></div>
         <div class="feature">
-          <img src="/images/Feature Circle Template.png" class="feature-icon">
+          <img src="/images/Parametric Template.png" class="feature-icon">
           <div class="feature-name">Data Science</div>
         </div>
         <div class="feature">
-          <img src="/images/Feature Circle Template.png" class="feature-icon">
+          <img src="/images/Parametric Template.png" class="feature-icon">
           <div class="feature-name">Statistical Modeling</div>
         </div>
         <div class="feature">
-          <img src="/images/Feature Circle Template.png" class="feature-icon">
+          <img src="/images/Parametric Template.png" class="feature-icon">
           <div class="feature-name">Brier Scores & MSE</div>
         </div>
       </div>
@@ -62,25 +62,25 @@
     </div>
     <div class="mobile-splash-features">
       <div class="features-wrapper"><h4>PROJECT FEATURES</h4></div>
-      <div class="feature">
-        <img src="/images/Feature Circle Template.png" class="feature-icon">
-        <div class="feature-name">Data Science</div>
-      </div>
-      <div class="feature">
-        <img src="/images/Feature Circle Template.png" class="feature-icon">
-        <div class="feature-name">Statistical Modeling</div>
-      </div>
-      <div class="feature">
-        <img src="/images/Feature Circle Template.png" class="feature-icon">
-        <div class="feature-name">Brier Scores & MSE</div>
-      </div>
+        <div class="feature">
+          <img src="/images/Parametric Template.png" class="feature-icon">
+          <div class="feature-name">Data Science</div>
+        </div>
+        <div class="feature">
+          <img src="/images/Parametric Template.png" class="feature-icon">
+          <div class="feature-name">Statistical Modeling</div>
+        </div>
+        <div class="feature">
+          <img src="/images/Parametric Template.png" class="feature-icon">
+          <div class="feature-name">Brier Scores & MSE</div>
+        </div>
     </div>
 
     <div class="halves-desc left-img">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md">
-            <div class="story-img-container"></div>
+            <div class="story-img-container" id="theorem-img"></div>
           </div>
           <div class="col-md">
             <h1>BAYES THEOREM</h1>
@@ -98,7 +98,7 @@
             <p>Forecasts based on individual stats were created by examining the difference in the stat between teams and then determining the win percentage of teams with such a difference in the history of all tournament games. For instance, Vermont shot Free Throws a point and a half better than Florida State, and from historical data teams with that difference tend to win 61% of their games, so that percentage was used to update the forecast.</p>
           </div>
           <div class="col-md">
-            <div class="story-img-container"></div>
+            <div class="story-img-container" id="matchup-img"></div>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md">
-              <div class="story-img-container"></div>
+              <div class="story-img-container" id="results-img"></div>
             </div>
             <div class="col-md">
               <h1>THE RESULTS DON'T LIE...</h1>
@@ -118,15 +118,15 @@
         </div>
       </div>
   
-      <div class="halves-desc right-img">
+      <div class="halves-desc left-img">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md">
               <h1>...BUT THEY CAN BE MISLEADING.</h1>
-              <p>The "Brier Skill Score" for a model attempts to analytically determine the value of a forecasting model versus an unskilled (50%-50%) prediction using the mean squared error of each prediction. Given that the model was somewhat overconfident (upsets that it rated as occurring 10% or less acutally occurred ___% of the time) it had a Brier Score of only _____, better than an unskilled prediction but not as infallible as the bracket results might suggest.</p>
+              <p>The "Brier Skill Score" for a model attempts to analytically determine the value of a forecasting model versus an unskilled (50%-50%) prediction using the mean squared error of each prediction. Given that the model was somewhat overconfident (upsets that it rated as occurring 10% or less acutally occurred ~25% of the time) it had a Brier Score of only .12, better than an unskilled prediction but not as infallible as the bracket results might suggest.</p>
             </div>
             <div class="col-md">
-              <div class="story-img-container"></div>
+              <div class="story-img-container" id="brier-img"></div>
             </div>
           </div>
         </div>
