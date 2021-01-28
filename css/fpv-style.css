@@ -186,6 +186,14 @@ table {
     position: relative;
 }
 
+#raven-highlight{
+    background-image: url("../images/raven-background.png");
+}
+
+#chariot-highlight{
+    background-image: url("../images/chariot-background.png");
+}
+
 .highlight-text{
     width: 400px;
     position: absolute;
