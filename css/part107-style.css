@@ -300,6 +300,9 @@ td{
     .col-md > h1{
         padding-top: 20px;
     }
+    .topic-desc{
+        left: 40px;
+    }
 }
 .story-img-container{
     background-image: url("../images/bandwdownscaled33.jpg");
