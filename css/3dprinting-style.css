@@ -451,3 +451,31 @@ td{
     color: #030040;
     transition: 0.3s;
 }
+#blue-link{
+    color:blue;
+}
+#colab{
+    background-image: url("../images/3d_colab.jpg");
+}
+
+#img-1{
+    background-image: url("../images/anker\ pegboard.jpg");
+}
+#img-2{
+    background-image: url("../images/3dprint_square_1.png");
+}
+#img-3{
+    background-image: url("../images/enable_forearm.gif");
+}
+#img-4{
+    background-image: url("../images/tank_square_1.png");
+}
+#img-5{
+    background-image: url("../images/art_gradcap.gif");
+}
+#img-6{
+    background-image: url("../images/art_wall.jpg");
+}
+#img-7{
+    background-image: url("../images/rcar_square_1.png");
+}
