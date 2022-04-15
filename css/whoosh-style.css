@@ -177,6 +177,11 @@ table {
     display: inline-block;
 }
 
+.proto-text{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .highlight-img{
     background-image: url("../images/bandwdownscaled33.jpg");
     background-size: cover;
