@@ -3,29 +3,60 @@
     <head>
         <title>Quinn Edwards</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Template by Dry Themes" />
+        <meta name="description" content="Quinn Edwards: Design Portfolio"/>
+        <meta property="og:image" content="https://edwardsq.github.io/images/homepage-img.PNG">
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-        <meta name="author" content="DryThemes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-        <link rel="shortcut icon" href="images/favicon.png" />    
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>	
-        <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+        <meta name="author" content="QuinnEdwards" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=.25">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".doc-loader").fadeOut("fast");
+                $(".portfolio-entry").hover(function() {
+             $("img",this).stop(true).fadeTo("fast", 0);
+            }, function() {
+             $("img",this).stop(true).fadeTo("fast", 1);
+            });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+            var $hamburger = $(".hamburger");
+            var $menu = $(".menu");
+            var $alreadyhere = $(".already-here");
+            $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $menu.fadeToggle().css("display","flex");
+            // Do something else, like open/close menu
+            });
+            $alreadyhere.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $menu.fadeToggle().css("display","flex");
+            // Do something else, like open/close menu
+            });
+            });
+          </script>
+        <script src="/js/fadeandtypingscript.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/QE Logo Circle.png" />
+        <link href="dist/hamburgers.css" rel="stylesheet"> 
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=PT+Serif:ital@1&display=swap" rel="stylesheet">	
+        <!-- <link rel="stylesheet" type="text/css"  href='css/clear.css' />
         <link rel="stylesheet" type="text/css"  href='css/common.css' />
         <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
         <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
         <link rel="stylesheet" type="text/css"  href='css/animated-headline.css' />        
-        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />        
+        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />         -->
         <link rel="stylesheet" type="text/css"  href='style.css' />
 
         <!--[if lt IE 9]>
                 <script src="js/html5shiv.js"></script>                
                 <script src="js/respond.min.js"></script>                
         <![endif]-->
-
     </head>
-    <body class="blog">
-
+    <body>
         <table class="doc-loader">
             <tbody>
                 <tr>
@@ -34,226 +65,170 @@
                     </td>
                 </tr>
             </tbody>
-        </table>   
-
-        <div class="menu-wraper center-relative">                
-            <nav id="header-main-menu" class="big-menu">
-                <ul class="main-menu sm sm-clean">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="features.html">Features</a>
-                    </li>                  
-                </ul>
-                <form role="search" class="search-form">
-                    <label>		
-                        <input autocomplete="off" type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:">                        
-                        <span class="search-info">search anything &amp; hit enter</span>
-                    </label>    
-                </form>
-            </nav>            
-            <div class="clear"></div>
-            <div class="menu-social">
-                <a href="#">
-                    <span class="fa fa-twitter"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-behance"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-dribbble"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-facebook"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-rss"></span>
-                </a>  
-            </div>
+        </table>
+        <div class="header-universal">
+            <div class="header-background"></div>
+            <a href="#home"><img src="images/QE Logo Trans.png" class="logo-image"></a>
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
         </div>
-
-        <header class="header-holder center-relative relative">
-            <div class="header-logo">
-                <a href="index.html">
-                    <img src="images/Minimal.png" alt="Rea">
-                </a>               
+        <div class="menu">
+            <p><a href="#portfolio"><span class="already-here">PORTFOLIO</span></a><br>
+            <a href="aboutme.html">ABOUT ME</a><br>
+            <a href="contactme.html">CONTACT</a></p>
+        </div>
+        <a name="home"><section class="splash">
+            <div class="intro-wrapper">
+                <div class="intro-main">
+                   <p id="intro">
+                        <span id="first-line">quinn edwards<br></span>
+                        <span id="pronun">[/kwin/ /edwards/]</span> &nbsp;<span id="noun">noun</span><br> <div id="hline"></div></p>
+                    <p id="defs">
+                        engineer, designer, <span
+                        class="txt-rotate"
+                        data-period="2200"
+                        data-rotate='[ "maker.", "pilot.", "creator.", "nerd.", "printer.", "artist." ]'></span>
+                   </p>
+                </div>
+            <!-- <div class="intro-shader"></div> -->
             </div>
-            <div class="header-txt">
-                <h1 class="entry-title">
-                    <span class="entry-title cd-headline letters type">
-						<span class="sec-line">I'm Quinn Edwards.</span>
-                        <span>I'm </span>
-                        <span class="cd-words-wrapper waiting">
-                            <b class="is-visible">an engineer.</b>
-                            <b>a designer.</b>
-                            <b>a video editor.</b>
-							<b>a pilot.</b>
-							<b>a nerd.</b>
-							<b>6'8".</b>
-							<b>a creator.</b>
-                        </span>
-                        <span class="sec-line">Nice to meet you.</span>                        
-                    </span>
-                </h1>            
+            <img src="images/bandwdownscaled33_compressed_lossy.jpg" id="intro-pic">
+            <a href="#portfolio"><div id="pointer-portfolio-main">Portfolio<br>&#9660</div></a>
+            <a href="aboutme.html"><div class = "rotate-left scrolled-p" id="pointer-about">About Me<br>&#9660</div></a>
+            <a href="contactme.html"><div class = "rotate-right" id="pointer-contact">Contact<br>&#9660</div></a>
+        </section></a>
+        <a name="portfolio"><section class="portfolio">
+            <a href="whoosh.html"><div class="portfolio-entry" id="whoosh">
+                <img src="images/whoosh_square_bw.png">
+            <div class="overlay">
+                <div class="text"><span>Whoosh</span><br><em>The world's first retractable Heelys.</em></div>
+            </div>
+            </div></a>
+            <a href="dev_showcase.html"><div class="portfolio-entry" id="dev">
+                <img src="images/dev_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Duke Electric Vehicles</span><br><em>World Record Most Efficient Vehicle, set in 2019.</em></div>
+                </div>
+            </div></a>
+            <a href="pcbs.html"><div class="portfolio-entry" id="pcbs">
+                <img src="images/pcbs_square_bw.png">
+            <div class="overlay">
+                <div class="text"><span>Printed Circuit Boards</span><br><em>Elevating my projects' electronics to a professional level.</em></div>
+            </div>
+            </div></a>
+            <a href="smartdorm.html"><div class="portfolio-entry" id="smartdorm">
+                <img src="images/sd_square_2.png">
+            <div class="overlay">
+                <div class="text"><span>The SmartDorm Project</span><br><em>Integrating microcontrollers and scheduling into a fully connected IOT college dorm room.</em></div>
+            </div>
+            </div></a>
+            <div class="portfolio-entry" id="oven">
+                <img src="images/oven bw.png">
+            <div class="overlay">
+                <div class="text"><span>DoughLove Smart Oven</span><br><em>"The keurig for baked goods."<br>Page Coming Soon </em></div>
+            </div>
             </div>
 
-            <div class="toggle-holder absolute">
-                <div id="toggle" class="">
-                    <div class="first-menu-line"></div>
-                    <div class="second-menu-line"></div>
-                    <div class="third-menu-line"></div>
-                    <div class="fourth-menu-line"></div>
+            <a href="art.html"><div class="portfolio-entry" id="art">
+                    <img src="images/clocks_square-2.png">
+                    <div class="overlay">
+                            <div class="text"><span>Hacks & Art</span><br><em>Art from my free time in a makerspace</em></div>
+                    </div>
+            </div></a>
+            <a href="enable.html"><div class="portfolio-entry" id="enable">
+                    <img src="images/enable_square_2.png">
+                    <div class="overlay">
+                        <div class="text"><span>Duke Enable</span><br><em>Designing custom 3D printed prosthetics for members of the Durham community like Logan, 6, pictured here.</em></div>
+                    </div>
+            </div></a>
+            <a href="fpv.html"><div class="portfolio-entry" id="fpv">
+                    <img src="images/fpv_square_2.png">
+                    <div class="overlay">
+                        <div class="text"><span>FPV Racing Drones</span><br><em>Avid quadcopter pilot with experience in drone photography and the building and flying of racing drones.</em></div>
+                    </div>
+            </div></a>
+            <a href="test-stand.html"><div class="portfolio-entry" id="test-stand">
+                <img src="images/thrust_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Thrust Test Stand</span><br><em>DIY solution for EDF, rocket, and motor thrust characterization.</em></div>
+                </div>
+            </div></a>
+            <a href="website.html"><div class="portfolio-entry" id="website">
+                <img src="images/website_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>This Website</span><br><em>Coded by me from the ground up using HTML, CSS, JS, and Bootstrap.</em></div>
+                </div>
+            </div></a>
+            <a href="bayes.html"><div class="portfolio-entry" id="bayes">
+                <img src="images/bayes_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Bayesian March Madness</span><br><em>Creating a simple algorithm which correctly predicted the winner of the 2019 NCAA Men's Basketball Tournament.</em></div>
+                </div>
+            </div></a>
+            <a href="3dprinting.html"><div class="portfolio-entry" id="prints">
+                <img src="images/3dprinting_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>3D Printing</span><br><em>I have print jobs running more or less nonstop on the two 3D printers I keep in my closet.</em></div>
+                </div>
+            </div></a>
+            
+            <div class="portfolio-entry" id="hexlights">
+                <img src="images/hexlights_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Hexlights</span><br><em>Fully programmable and music reactive LED backlit paneling.</em></div>
                 </div>
             </div>
-            <div class="clear"></div>	
-        </header>
-
-        <div id="blog-holder">
-            <div class="blog-background"></div>
-            <div class="grid">
-                <div class="grid-sizer"></div>
-                
-
-
-                <article class="grid-item element-item p_one_half">
-                    <a class="img relative" href="single.html">
-                        <img src="images/fakerobotwire.png" alt="" >
-                        <img class="hover-img" src="demo-images/item_image_02b.jpg" alt="">
-                        
-                    </a>
-                    
-                </article>
-
-                <article class="grid-item element-item p_one_half">
-                    <a class="img relative" href="single.html">
-                        <img src="images/mavicwire.jpg" alt="">
-                        <img class="hover-img" src="images/droneshot.jpg" alt="">
-                        
-                    </a>
-                    
-                </article>
-
-                <article class="grid-item element-item p_one_fourth">
-                    <a class="img relative" href="single.html">
-                        <img src="images/benchy.jpg" alt="">
-                        <img class="hover-img" src="demo-images/item_image_04b.jpg" alt="">
-                        
-                    </a>
-                    
-                </article>
-
-                <article class="grid-item element-item p_one_fourth">
-                    <a class="img relative" href="single.html">
-                        <img src="images/mavicwire.jpg" alt="">
-                        <img class="hover-img" src="demo-images/item_image_05b.jpg" alt="">
-                        
-                    </a>
-                    
-                </article>
+            <a href="part107.html"><div class="portfolio-entry" id="part107">
+                <img src="images/dronephoto_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Drone Photography</span><br><em>FAA Part 107 Licenced Commercial Drone Pilot with experience in real estate and cinematic videography.</em></div>
+                </div>
+            </div></a>
+            <div class="portfolio-entry" id="tank">
+                <img src="images/tank_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Tank?</span><br><em>It's what it looks like...</em></div>
+                </div>
             </div>
-            <div class="clear"></div>
-
-            <div class="block content-1170 center-relative center-text">
-                <a target="_self" class="more-posts-index">
-                    <img src="images/loadmore.png" alt="Load more">
-                </a>
+            <!-- <a href="rocketcar.html"> --><div class="portfolio-entry" id="rocket-car">
+                <img src="images/rcar_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Rocket Car</span><br><em>The brushless motor makes it fast enough already, but the up to E class rocket takes it one step further.</em></div>
+                </div>
+            </div><!-- </a> -->
+            <div class="portfolio-entry" id="flyak">
+                <img src="images/flyak_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>The Flyak</span><br><em>A hydrofoil kayak for class.</em></div>
+                </div>
             </div>
-            <img class="blog-img" src="images/CoverBuild.png" alt="">
-        </div>
-
-        <div class="clear"></div>
-
-        <footer class="footer">
-            <div class="content-1170 center-relative">			
-                <ul id="footer-sidebar">
-                    <li class="widget">
-                        <h4 class="widgettitle">Categories</h4>		
-                        <ul>
-                            <li class="cat-item">
-                                <a href="#">Branding</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Fonts</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Icons</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Misc</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Mockup</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Play</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Vectors</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Video</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="widget">
-                        <div class="menu-footer-menu-container">
-                            <ul id="menu-footer-menu" class="menu">
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-                                <li>
-                                    <a href="features.html">Features</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>                                
-                            </ul>
-                        </div>
-                    </li>                    
-                    <li class="widget">
-                        <div class="textwidget custom-html-widget">
-                            <a href="#"><span class="fa fa-twitter"></span></a>
-                            <a href="#"><span class="fa fa-behance"></span></a>
-                            <a href="#"><span class="fa fa-dribbble"></span></a>
-                            <a href="#"><span class="fa fa-facebook"></span></a>
-                            <a href="#"><span class="fa fa-rss"></span></a>
-
-                            <br>
-                            <br>
-
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </div>
-                    </li>            
-                </ul>
+            <div class="portfolio-entry" id="battlebot">
+                <img src="images/battlebot_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>BattleBot Make-athon 2020</span><br><em>Combat robot created from scratch in 36 hours.</em></div>
+                </div>
             </div>
-<<<<<<< Updated upstream
-        </footer>
-
-        <!--Load JavaScript-->
-        <script src="js/jquery.js"></script>			                                       
-        <script src='js/jquery.fitvids.js'></script>
-        <script src='js/jquery.smartmenus.min.js'></script>        
-        <script src='js/imagesloaded.pkgd.js'></script>        
-        <script src='js/isotope.pkgd.js'></script>        
-        <script src='js/jquery.carouFredSel-6.0.0-packed.js'></script>
-        <script src='js/jquery.mousewheel.min.js'></script>
-        <script src='js/jquery.touchSwipe.min.js'></script>
-        <script src='js/jquery.easing.1.3.js'></script>
-        <script src='js/main-headline.js'></script>
-        <script src='js/jquery.sticky-kit.min.js'></script>
-        <script src='js/jquery.ba-throttle-debounce.min.js'></script>                
-        <script src='js/jquery.nicescroll.min.js'></script>
-        <script src='js/main.js'></script>
-=======
+            <div class="portfolio-entry" id="tube">
+                <img src="images/tube_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Pneumatic Tube Opener</span><br><em>A purpose built device for the Duke University Hospital Central Lab aiding in processing samples.</em></div>
+                </div>
+            </div>
+            <div class="portfolio-entry" id="frc">
+                <img src="images/sciborgs_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>FIRST Robotics</span><br><em>Head of Construction for FRC Team 1155, lead designer of 2017 and 2018 robots.</em></div>
+                </div>
+            </div>
+            <!-- <div class="portfolio-entry" id="ama">
+                <img src="images/fpv_square_2.png">
+                <div class="overlay">
+                    <div class="text"><span>Academy of Model Aeronautics</span><br><em>Recent member of Duke's club focusing on autonomous drone operation.</em></div>
+                </div>
+            </div>
             <div class="portfolio-entry" id="rube">
                 <img src="images/fpv_square_2.png">
                 <div class="overlay">
@@ -262,8 +237,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div> -->
         </section></a>
         <section class="footer">
-            <div id="copyright">Copyright 2022 Quinn Edwards.</div>
+            <div id="copyright">Copyright 2021 Quinn Edwards.</div>
         </section>
->>>>>>> Stashed changes
     </body>
 </html>

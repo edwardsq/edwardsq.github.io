@@ -34,7 +34,7 @@ table {
 .proj-splash{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/bandwdownscaled33.jpg");
+    background-image: url("../images/w_mohsin.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,6 +165,7 @@ table {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
+    font-size: 25px;
 }
 .design-goals > h1{
     font-family: 'Oswald', sans-serif;
@@ -178,9 +179,169 @@ table {
 }
 
 .proto-text{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
+.proto-text h1{
+    margin-bottom: 20px;
+}
+
+.sandp500{
+    margin-top: 40px;
+}
+
+#whiteboards{
+    /* min-height: 600px; */
+    /* background-attachment: fixed;
+    background-position: 50% 50%;
+    background-image: url("../images/diffboard.png");
+    background-size: cover; */
+    padding: 20px;
+}
+
+.sandp500 div img{
+    display: inline-block;
+    max-width: 90vw;
+    max-height: 500px;
+}
+
+#prototypes{
+    /* background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    background-image: url("../images/proto-photo-test.png");
+    min-height: 400px; */
+    padding: 20px;
+}
+
+.shoe-reveal{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.shoe-reveal p{
+    font-size: 20px;
+    white-space: normal;
+    max-width: 96vw;
+}
+
+#shoe-gif{
+    max-height: 60vh;
+    max-width: 80vw;
+    width: auto;
+    height: auto;
+    margin: 50px;
+    display: inline-block;
+}
+
+.shoe-reveal h1{
+    font-family: 'Oswald';
+    font-size: 3em;
+}
+
+#assembly-gif{
+    width: 80%;
+}
+
+#mech-gif{
+    width: 80%;
+}
+
+.explainer div{
+    padding: 25px;
+}
+
+.machtext{
+    padding:40px;
+}
+
+.machtext h4{
+    font-family: 'Oswald';
+    font-weight: 250;
+}
+
+.mach-ani{
+    width: 350px;
+    height: 350px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.machwrap{
+    display: inline-block;
+}
+
+#mach1{
+    background-image: url("../images/mach1\ crop_Moment.jpg");
+}
+
+#mach1:hover{
+    background-image: url("../images/mach1ani.gif");
+}
+
+#mach2{
+    background-image: url("../images/mach2still.jpg");
+}
+
+#mach2:hover{
+    background-image: url("../images/mach2ani.gif");
+}
+
+#mach3{
+    background-image: url("../images/mach3still.jpg");
+}
+
+#mach3:hover{
+    background-image: url("../images/mach3ani.gif");
+}
+
+#mach4{
+    background-image: url("../images/mach4still.jpg");
+}
+
+#mach4:hover{
+    background-image: url("../images/mach4ani.gif");
+}
+
+#hovericon{
+    height: 25px;
+    width: auto;
+    display: inline;
+    margin-right: 10px;
+}
+
+.video-demo div iframe{
+    display: inline;
+    max-width: 90vw;
+}
+
+.video-demo div{
+    padding: 40px;
+}
+
+.team-pic img{
+    max-width:80vw;
+    max-height:50vh;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.team-pic p{
+    padding: 20px;
+}
+
+.team-pic p i a{
+    text-decoration: underline;
+}
+
 
 .highlight-img{
     background-image: url("../images/bandwdownscaled33.jpg");
@@ -380,14 +541,28 @@ td{
     overflow-x: hidden;
 }
 #img-1{
-    background-image: url("../images/bandwdownscaled33.jpg");
+    background-image: url("../images/mohsingif\ vsmall.gif");
 }
 #img-2{
-    background-image: url("../images/bandwdownscaled33.jpg");
+    background-image: url("../images/whooshstick.JPG");
 }
 #img-3{
-    background-image: url("../images/bandwdownscaled33.jpg");
+    background-image: url("../images/w_roll.JPG");
 }
+#img-4{
+    background-image: url("../images/w_wilk.JPG");
+}
+#img-5{
+    background-image: url("../images/mework.JPEG");
+}
+#img-6{
+    background-image: url("../images/w_out.JPG");
+}
+#img-7{
+    background-image: url("../images/w_night.JPG");
+}
+
+
 .no-pad{
     padding: none;
 }

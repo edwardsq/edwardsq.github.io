@@ -282,7 +282,7 @@ table {
 }
 
 #grid3{
-    background-image: url("../images/gridboard.png"); 
+    background-image: url("../images/gridirl.png"); 
 }
 
 #bulb1{
@@ -294,7 +294,7 @@ table {
 }
 
 #bulb3{
-    background-image: url("../images/bulbsolder.jpg"); 
+    background-image: url("../images/bulbirl.png"); 
 }
 
 #blinds1{
@@ -306,7 +306,7 @@ table {
 }
 
 #blinds3{
-    background-image: url("../images/iotside.jpg"); 
+    background-image: url("../images/iotirl.png"); 
 }
 
 #diff1{
@@ -318,7 +318,7 @@ table {
 }
 
 #diff3{
-    background-image: url("../images/diffboard.png"); 
+    background-image: url("../images/diffirl.png"); 
 }
 
 #hall1{
@@ -330,7 +330,7 @@ table {
 }
 
 #hall3{
-    background-image: url("../images/hallboard.png"); 
+    background-image: url("../images/hallirl.png"); 
 }
 
 #sign1{
@@ -342,7 +342,7 @@ table {
 }
 
 #sign3{
-    background-image: url("../images/signboard.png"); 
+    background-image: url("../images/signirl.png"); 
 }
 
 #coil1{
@@ -354,7 +354,7 @@ table {
 }
 
 #coil3{
-    background-image: url("../images/testerboard.png"); 
+    background-image: url("../images/testerirl.png"); 
 }
 
 #ledr1{
@@ -366,7 +366,7 @@ table {
 }
 
 #ledr3{
-    background-image: url("../images/testerboard.png"); 
+    background-image: url("../images/ledrirl.png"); 
 }
 
 .pcb-text{
