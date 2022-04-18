@@ -375,25 +375,25 @@ td{
     overflow-x: hidden;
 }
 #img-1{
-    background-image: url("../images/art_basquiat.jpg");
-}
-#img-2{
     background-image: url("../images/art_catan.jpg");
 }
+#img-2{
+    background-image: url("../images/art_dmt.jpg");
+}
 #img-3{
-    background-image: url("../images/art_fantasy.jpg");
+    background-image: url("../images/art_nyc.jpg");
 }
 #img-4{
     background-image: url("../images/art_clocks.jpg");
 }
 #img-5{
-    background-image: url("../images/art_movie\ poster.png");
+    background-image: url("../images/whooshstick.JPG");
 }
 #img-6{
     background-image: url("../images/art_news.JPG");
 }
 #img-7{
-    background-image: url("../images/art_oscar-party.jpg");
+    background-image: url("../images/art_puzzle.jpg");
 }
 #img-8{
     background-image: url("../images/art_record.jpg");
@@ -408,10 +408,10 @@ td{
     background-image: url("../images/art_rt-door-decs-all.JPG");
 }
 #img-12{
-    background-image: url("../images/art_warhammer.JPG");
+    background-image: url("../images/art_movie\ poster.png");
 }
 #img-13{
-    background-image: url("../images/Regis\ 2024\ Poster\ Large\ Bottom\ 2.png");
+    background-image: url("../images/art_hoop.jpg");
 }
 #img-14{
     background-image: url("../images/RT\ Biden.png");

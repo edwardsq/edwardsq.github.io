@@ -244,6 +244,11 @@ body{
     background-image: url("../images/dev_machined.jpg");
 }
 
+#newslink{
+    color: blue;
+    text-decoration: underline;
+}
+
 .no-pad{
     padding: none;
 }
