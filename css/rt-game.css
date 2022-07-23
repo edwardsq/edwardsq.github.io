@@ -1,0 +1,149 @@
+form{
+    padding-top: 10px;
+    width: 100%;
+}
+
+body{
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+
+#rt-img{
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+@media (min-width: 768px) {
+    .racename{
+        border-right: 1px solid black;
+    }
+    .state{
+        display: block;
+    }
+    .dash{
+        display: none;
+    }
+    .dist{
+        display: block;
+    }
+}
+
+.container{
+    background-color: white;
+}
+
+.racename{
+    font-family: 'Oswald';
+    font-size: 4em;
+    line-height: 1.2em;
+    padding: 10px;
+}
+
+.state{
+    color: slategray;
+}
+
+.dist-hist{
+    font-family: 'Oswald';
+}
+
+.dist-hist>div:first-child{
+    font-size: 22px;
+}
+
+.nameandblurb{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.rw{
+    color: #ff5347;
+    font-family: 'Open Sans';
+    display: block;
+}
+
+.bw{
+    color: royalblue;
+    font-family: 'Open Sans';
+    display: block;
+}
+
+.fteodds{
+    font-family: 'Oswald';
+    margin-top: 20px;
+    font-size: 28px;
+}
+.fteodds>div:first-child{
+    font-size: 22px;
+}
+
+.bo{
+    color: royalblue;
+}
+.ro{
+    color: #ff5347;
+}
+
+.blurb{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.choose{
+    margin-top: 4vh;
+}
+
+.btn-blue{
+    color: royalblue;
+    width: 50%!important;
+}
+.btn-blue:checked+.btn{
+    background-color: royalblue;
+    border-color: royalblue;
+    color: white;
+}
+.btn-blue:hover+.btn{
+    background-color: royalblue;
+    border-color: royalblue;
+    color: white;
+}
+.btn-red{
+    color: #ff5347;
+    width: 50%!important;
+}
+.btn-red:checked+.btn{
+    background-color: #ff5347;
+    border-color: #ff5347;
+    color: white;
+}
+.btn-red:hover+.btn{
+    background-color: #ff5347;
+    border-color: #ff5347;
+    color: white;
+}
+
+.btn{
+    font-family: 'Oswald';
+    font-size: 20px;
+}
+
+#fname{
+    width: 60%;
+    display: inline-block;
+}
+.namebox{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.namebox>div{
+    padding-top: 20px;
+}
