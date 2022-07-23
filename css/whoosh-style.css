@@ -534,15 +534,16 @@ td{
     background-position: center;
     transition:0.3s;
 }
-.gallery-img:hover{
+/* .gallery-img:hover{
     transform: scale(1.05);
     position: relative;
     z-index: 2;
     overflow-x: hidden;
-}
+} */
 #img-1{
     background-image: url("../images/mohsingif\ vsmall.gif");
 }
+
 #img-2{
     background-image: url("../images/whooshstick.JPG");
 }
