@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"  href='css/art_style.css' />
     <link rel="stylesheet" type="text/css"  href='style.css' />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -19,7 +18,7 @@
     <link rel="shortcut icon" href="images/QE Logo Circle.png" />
   </head>
   <body>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <div class="header-universal">
       <div class="header-background scrolled"></div>
       <a href="index.html#portfolio"><div class="back-button">&#11104</div></a>
@@ -27,74 +26,266 @@
       
   </div>
 
-  <div class="gallery" id="top-row">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-1"><div class="gallery-num">01</div></div>
-        </div>
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-2"><div class="gallery-num">02</div></div>
-        </div>
-        <div class="col-md">
-          <div class="gallery-img" id="img-3"><div class="gallery-num">03</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container-fluid accordian-group" id="top-row">
 
-  <div class="gallery">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-4"><div class="gallery-num">04</div></div>
-        </div>
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-5"><div class="gallery-num">05</div></div>
-        </div>
-        <div class="col-md">
-          <div class="gallery-img" id="img-6"><div class="gallery-num">06</div></div>
-        </div>
-        <div class="col-md">
-          <div class="gallery-img" id="img-7"><div class="gallery-num">07</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- ROW 1 -->
 
-  <div class="gallery">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-8"><div class="gallery-num">08</div></div>
-        </div>
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-9"><div class="gallery-num">09</div></div>
-        </div>
-        <div class="col-md">
-          <div class="gallery-img" id="img-10"><div class="gallery-num">10</div></div>
+    <div class="row accordian-group">
+      <div class="col-md gallery-img no-pad" id="img-1">
+        <a data-bs-toggle="collapse" href="#coll1" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">01</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-1 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll1" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-1"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>THE GOLDEN RECORD</h3>
+            <p>2018<br>A replica of the Voyager Probe's famous "Golden Record" which contains music and imagery from Planet Earth. The symbols on the are for an alien civilization and both describe how to play the record and provide instructions for finding our world. Reproduced with laser cut plywood and spray paint.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll1" aria-label="Close"></button>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="gallery">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-11"><div class="gallery-num">11</div></div>
-        </div>
-        <div class="col-md no-pad">
-          <div class="gallery-img" id="img-12"><div class="gallery-num">12</div></div>
-        </div>
-        <div class="col-md">
-          <div class="gallery-img" id="img-13"><div class="gallery-num">13</div></div>
-        </div>
-        <div class="col-md">
-          <div class="gallery-img" id="img-14"><div class="gallery-num">14</div></div>
+
+      <div class="col-md gallery-img order-2" id="img-2">
+        <a data-bs-toggle="collapse" href="#coll2" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">02</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-2 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll2" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-2"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>DARE MIGHTY THINGS</h3>
+            <p>2022<br>A 40" diameter acrylic/vinyl graphic inspired by the Perseverance Rover's parachute, deployed on its way through the Martian atmosphere. The irregular color pattern belies the message hidden inside, encoded in binary. Around the rim, the coordinates of NASA's Jet Propulsion Laboratory; in the center, their motto: "Dare Mighty Things." I laser cut the gray acrylic in two halves with lightly engraved markings for the 320 vinyl segments which were cut on a Cricut and hand placed.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll2" aria-label="Close"></button>
         </div>
       </div>
+
+
+      <div class="col-md gallery-img order-3" id="img-3">
+        <a data-bs-toggle="collapse" href="#coll3" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">03</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-3 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll3" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-3"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>HOME</h3>
+            <p>2019<br>A laser cut/stained wood streetmap of my native New York City. This was a demo piece for a broader world clock project which was briefly stalled during the chip shortage but has since made it's way back onto my To Do list.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll3" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="w-100 d-none d-md-block order-md-4"></div>
     </div>
+
+    <!-- ROW 2 -->
+
+    <div class="row accordian-group">
+      <div class="col-md gallery-img no-pad" id="img-4">
+        <a data-bs-toggle="collapse" href="#coll4" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">04</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-1 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll4" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-4"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>WHOOSH BRAND</h3>
+            <p>2022<br>Forever in love with branding, I made some "company swag" for <a href="whoosh.html">a project</a> with some friends.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll4" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="col-md gallery-img order-2" id="img-5">
+        <a data-bs-toggle="collapse" href="#coll5" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">05</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-2 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll5" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-5"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>FIT TO PRINT</h3>
+            <p>2016<br>A collage of historic spaceflight newspaper reprints. Made for my outer-space themed childhood bedroom (notice the handpainted stars on the wall).</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll5" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="col-md gallery-img order-3" id="img-6">
+        <a data-bs-toggle="collapse" href="#coll6" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">06</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-3 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll6" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-6"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>WOODCUT PUZZLES</h3>
+            <p>2022<br>A laser cut 500 piece wooden puzzle made as a gift for my mom, who not nearly as much of a hippie as the graphic would suggest.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll6" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="col-md gallery-img order-3" id="img-7">
+        <a data-bs-toggle="collapse" href="#coll7" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">07</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-3 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll7" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-7"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>WORLD CLOCKS</h3>
+            <p>2019<br>A set of clocks for my sophomore year dorm room. I purchased the mechanisms and laser cut, stained, and painted the faces. Normally they would display PST, GMT, & CST, but for this photo I scrambled the times because I thought it looked cooler.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll7" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="w-100 d-none d-md-block order-md-4"></div>
+    </div>
+
+    <!-- ROW 3 -->
+
+    <div class="row accordian-group">
+      <div class="col-md gallery-img no-pad" id="img-8">
+        <a data-bs-toggle="collapse" href="#coll8" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">08</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-1 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll8" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-8"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>SETTLERS OF CATAN</h3>
+            <p>2020<br>Laser cut wood & felt version of the popular board game to play with friends.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll8" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="col-md gallery-img order-2" id="img-9">
+        <a data-bs-toggle="collapse" href="#coll9" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">09</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-2 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll9" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-9"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>HOME II</h3>
+            <p>2020<br>Without access to a laser cutter, I instead 3D printed 49 ultra thin panels to create a streetmap of Manhattan. </p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll9" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="col-md gallery-img order-3" id="img-10">
+        <a data-bs-toggle="collapse" href="#coll10" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">10</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-3 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll10" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-10"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>TAPE ART</h3>
+            <p>2019<br>Looking for a way to fill a large blank wall on a budget, I used a small roll of black Washi tape to freehand a geometric mountain range.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll10" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="w-100 d-none d-md-block order-md-4"></div>
+    </div>
+
+    <!-- ROW 4 -->
+
+    <div class="row accordian-group">
+      <div class="col-md gallery-img no-pad" id="img-11">
+        <a data-bs-toggle="collapse" href="#coll11" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">11</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-1 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll11" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-11"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>WOODEN SHIELDS</h3>
+            <p>2021<br>Laser cut gifts to welcome new members to a social group on campus. I wound up making a few hundred of these over several years.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll11" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="col-md gallery-img order-2" id="img-12">
+        <a data-bs-toggle="collapse" href="#coll12" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">12</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-2 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll12" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-12"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>MOVIE POSTER</h3>
+            <p>2019<br>I thought some friends looked funny after putting on moisturizing face masks, so I turned them into the stars of their very own horror movie.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll12" aria-label="Close"></button>
+        </div>
+      </div>
+
+
+      <div class="col-md gallery-img order-3" id="img-13">
+        <a data-bs-toggle="collapse" href="#coll13" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">13</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-3 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll13" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-13"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>BUZZER BEATER</h3>
+            <p>2021<br>I wanted to put up a mini hoop in the common room, but the stock Nerf hoops are cardboard and last a day. So instead I laser cut and painted a custom backboard adorned with some cut vinyl branding.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll13" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="col-md gallery-img order-3" id="img-14">
+        <a data-bs-toggle="collapse" href="#coll14" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="gallery-linkbox"><div class="gallery-num">14</div></div>
+        </a>
+      </div>
+      <div class="col-md-12 order-3 order-md-last">
+        <div class="row align-items-center justify-content-center collapse gallery-sel" id="coll14" data-bs-parent="#top-row">
+          <div class="col-md-5 gallery-sel-img" id="img-14"></div>
+          <div class="col-md-5 col-sm-10 gallery-sel-text">
+            <h3>THE ELECTION GAME</h3>
+            <p>2020<br>As a huge data nerd, I love political polling and every year run an election prediction game for friends. For last year's game I created a custom online form to brush up on my web development skills, you can check it out <a href="rt.html">here</a>.</p>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#coll14" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="w-100 d-none d-md-block order-md-4"></div>
+    </div>
+
   </div>
 
     <div class="learn-more">

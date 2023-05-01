@@ -34,7 +34,7 @@ table {
 .proj-splash{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/bandwdownscaled33.jpg");
+    background-image: url("../images/w_mohsin.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,6 +165,7 @@ table {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
+    font-size: 25px;
 }
 .design-goals > h1{
     font-family: 'Oswald', sans-serif;
@@ -176,6 +177,171 @@ table {
     padding-top: 250px;
     display: inline-block;
 }
+
+.proto-text{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.proto-text h1{
+    margin-bottom: 20px;
+}
+
+.sandp500{
+    margin-top: 40px;
+}
+
+#whiteboards{
+    /* min-height: 600px; */
+    /* background-attachment: fixed;
+    background-position: 50% 50%;
+    background-image: url("../images/diffboard.png");
+    background-size: cover; */
+    padding: 20px;
+}
+
+.sandp500 div img{
+    display: inline-block;
+    max-width: 90vw;
+    max-height: 500px;
+}
+
+#prototypes{
+    /* background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    background-image: url("../images/proto-photo-test.png");
+    min-height: 400px; */
+    padding: 20px;
+}
+
+.shoe-reveal{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.shoe-reveal p{
+    font-size: 20px;
+    white-space: normal;
+    max-width: 96vw;
+}
+
+#shoe-gif{
+    max-height: 60vh;
+    max-width: 80vw;
+    width: auto;
+    height: auto;
+    margin: 50px;
+    display: inline-block;
+}
+
+.shoe-reveal h1{
+    font-family: 'Oswald';
+    font-size: 3em;
+}
+
+#assembly-gif{
+    width: 80%;
+}
+
+#mech-gif{
+    width: 80%;
+}
+
+.explainer div{
+    padding: 25px;
+}
+
+.machtext{
+    padding:40px;
+}
+
+.machtext h4{
+    font-family: 'Oswald';
+    font-weight: 250;
+}
+
+.mach-ani{
+    width: 350px;
+    height: 350px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.machwrap{
+    display: inline-block;
+}
+
+#mach1{
+    background-image: url("../images/mach1\ crop_Moment.jpg");
+}
+
+#mach1:hover{
+    background-image: url("../images/mach1ani.gif");
+}
+
+#mach2{
+    background-image: url("../images/mach2still.jpg");
+}
+
+#mach2:hover{
+    background-image: url("../images/mach2ani.gif");
+}
+
+#mach3{
+    background-image: url("../images/mach3still.jpg");
+}
+
+#mach3:hover{
+    background-image: url("../images/mach3ani.gif");
+}
+
+#mach4{
+    background-image: url("../images/mach4still.jpg");
+}
+
+#mach4:hover{
+    background-image: url("../images/mach4ani.gif");
+}
+
+#hovericon{
+    height: 25px;
+    width: auto;
+    display: inline;
+    margin-right: 10px;
+}
+
+.video-demo div iframe{
+    display: inline;
+    max-width: 90vw;
+}
+
+.video-demo div{
+    padding: 40px;
+}
+
+.team-pic img{
+    max-width:80vw;
+    max-height:50vh;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.team-pic p{
+    padding: 20px;
+}
+
+.team-pic p i a{
+    text-decoration: underline;
+}
+
 
 .highlight-img{
     background-image: url("../images/bandwdownscaled33.jpg");
@@ -361,11 +527,6 @@ td{
     left: 0;
 }
 
-a{
-    padding: none;
-    margin: none;
-}
-
 .gallery-img{
     height: 400px;
     background-repeat: no-repeat;
@@ -373,74 +534,36 @@ a{
     background-position: center;
     transition:0.3s;
 }
-
-.gallery-sel{
-    background-color: gray;
-}
-
-.gallery-sel-img{
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.gallery-sel-text{
-    color: white;
-    font-family: 'Open Sans';
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.gallery-sel-text>h3{
-    font-family: 'Oswald';
-}
-
+/* .gallery-img:hover{
+    transform: scale(1.05);
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+} */
 #img-1{
-    background-image: url("../images/art_record.jpg");
+    background-image: url("../images/mohsingif\ vsmall.gif");
 }
+
 #img-2{
-    background-image: url("../images/art_dmt.jpg");
-}
-#img-3{
-    background-image: url("../images/art_nyc.jpg");
-}
-#img-4{
-    
     background-image: url("../images/whooshstick.JPG");
 }
+#img-3{
+    background-image: url("../images/w_roll.JPG");
+}
+#img-4{
+    background-image: url("../images/w_wilk.JPG");
+}
 #img-5{
-    
-    background-image: url("../images/art_news.JPG");
+    background-image: url("../images/mework.JPEG");
 }
 #img-6{
-    
-    background-image: url("../images/art_puzzle.jpg");
+    background-image: url("../images/w_out.JPG");
 }
 #img-7{
-    background-image: url("../images/art_clocks.jpg");
+    background-image: url("../images/w_night.JPG");
 }
-#img-8{
-    background-image: url("../images/art_catan.jpg");
-}
-#img-9{
-    background-image: url("../images/art_wall.jpg");
-}
-#img-10{
-    background-image: url("../images/art_tape.jpg");
-}
-#img-11{
-    background-image: url("../images/art_rt-door-decs-all.JPG");
-}
-#img-12{
-    background-image: url("../images/art_movie\ poster.png");
-}
-#img-13{
-    background-image: url("../images/art_hoop.jpg");
-}
-#img-14{
-    background-image: url("../images/RT\ Biden.png");
-}
+
+
 .no-pad{
     padding: none;
 }
@@ -451,15 +574,9 @@ a{
     font-size: 20px;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 35px;
     transform: rotate(-90deg);
     transition: 0.3s;
-}
-.gallery-linkbox{
-    height: 100%;
-    width: 100%;
-    display: block;
-    position: relative;
 }
 .footer
   {
@@ -515,6 +632,69 @@ a{
     color: #030040;
     transition: 0.3s;
 }
-#top-row{
-    margin-top: 100px;
+
+.phold{
+    display: flex;
+    background-color: #030040;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+.image-ani{
+    display: flex;
+    background-image: url("../images/falcheav.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.test1{
+    height: 10%;
+    /* background-color: red; */
+    flex-grow: 1;
+    display: block;
+    position: relative;
+    top: 70%;
+    border: none;
+    border-top: 5px dotted gray;
+    margin-top: 18px;
+    opacity: 0%;
+    transition: 1s ease-in-out;
+    transition-delay: .75s;
+}
+.test2{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: gray;
+    font-family: 'Oswald';
+    position: relative;
+    margin: none;
+    top: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0%;
+    transition: 1s ease-in-out;
+}
+
+.fadeplz{
+    opacity: 100%;
+}
+
+.statement{
+    height: 80vh;
+    width: 100%;
+    background-color: #030040;
+    display: flex;
+    color: white;
+    margin: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
 }

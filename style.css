@@ -598,6 +598,19 @@ a:visited
     background-repeat: no-repeat;
     background-position: top;
 }
+#airbrakes
+{
+    background-image: url("images/rocket_color.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#cubesat
+{
+    background-image: url("images/cubesat_color.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 .portfolio-entry:hover .overlay
 {
     height:20%;
