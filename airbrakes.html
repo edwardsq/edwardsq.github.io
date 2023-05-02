@@ -20,6 +20,23 @@
 
     <title>Rocket Airbrakes</title>
     <link rel="shortcut icon" href="images/QE Logo Circle.png" />
+    <script>
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const square = entry.target.querySelector('#abmov');
+
+          if (entry.isIntersecting) {
+            square.classList.add('tinydancer');
+          return; // if we added the class, exit the function
+          }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove('tinydancer');
+  });
+});
+
+      observer.observe(document.querySelector('.shuffle-test'));
+    </script>
   </head>
   <body>
     
@@ -38,7 +55,7 @@
       <div class="proj-splash-desc">
         <h1>High-Power Rocketry Airbrake System</h1>
         <div class="abstract">
-          <p>Mechanical design, control system development, and custom flight simulation of an active flight control system for precision apogee targeting on high power rockets. Slated to fly on Duke AERO's 2023 rocket at Spaceport America Cup.</p>
+          <p>Mechanical design, control system development, and custom flight simulation of an active flight control system for precision apogee targeting on high power rockets. Flying on Duke AERO's 2023 rocket at the Spaceport America Cup.</p>
         </div>
       </div>
       <div class="proj-splash-features">
@@ -52,7 +69,7 @@
           <div class="feature-name">Mechanism Design</div>
         </div>
         <div class="feature">
-          <img src="/images/3D Printing Icon.png" class="feature-icon">
+          <img src="/images/Parametric Template.png" class="feature-icon">
           <div class="feature-name">Control Systems</div>
         </div>
       </div>
@@ -60,7 +77,7 @@
     <div class="mobile-splash-desc">
       <h1>High-Power Rocketry Airbrake System</h1>
       <div class="abstract">
-        <p>Mechanical design, control system development, and custom flight simulation of an active flight control system for precision apogee targeting on high power rockets. Slated to fly on Duke AERO's 2023 rocket at Spaceport America Cup.</p>
+        <p>Mechanical design, control system development, and custom flight simulation of an active flight control system for precision apogee targeting on high power rockets. Flying on Duke AERO's 2023 rocket at the Spaceport America Cup.</p>
       </div>
     </div>
     <div class="mobile-splash-features">
@@ -97,29 +114,131 @@
       </div>
       <div class="row my-5 align-items-center">
         <div class="col-md d-flex justify-content-center text-center">
-          <div class="phold"></div>
+          <div class="phold2"></div>
         </div>
         <div class="col-md text-md-center">
-          A growing cohort of teams are implementing active drag control, intentionally overshooting their alitude target in simulations just to deploy airbrakes during flight that bleed off speed until the rocket is on course to hit its mark. One of my tasks this year for Duke Aero, Duke University's High Power Rocketry team, was to develop such a system, one that would take our rocket, on course for 11,000 feet in simulation, and deliver it precisely to its 10,000ft target.
+          A growing cohort of teams are implementing active drag control, intentionally overshooting their alitude target in simulations so they can deploy airbrakes during flight that bleed off speed until the rocket is on course to hit its mark. One of my tasks this year for Duke Aero, Duke University's High Power Rocketry team, was to develop such a system, one that would take our rocket, on course for 11,000 feet in simulation, and deliver it precisely to its 10,000ft target.
         </div>
       </div>
-      <div class="row my-5 align-items-center">
-        <div class="col text-center"><h3>We got some fucking problems boysssssss...</h3></div>
-      </div>
+      <!-- <div class="row my-5 align-items-center">
+        <div class="col text-center"><h3>Making this happen was an extremely involved technical problem, with advanced mechanical, electrical, software, and controls challenges in equal measure.</h3></div>
+      </div> -->
     </div>
+
+    <div class="design-goals">
+      <h1>DESIGN GOALS</h1>
+      <div class="container"><div class="row">
+        <div class="col-md"><div class="gnd"><div class="goal-num">01&nbsp;</div><div class="goal-name">RELIABLE</div></div>
+        Flight critical system, so simplicity and reproducability is key.
+        </div>
+        <div class="col-md"><div class="gnd"><div class="goal-num">02&nbsp;</div><div class="goal-name">ROBUST</div></div>
+        In the load path for launch and recovery, needs to withstand the force of the N600 motor and the shock of parachute deployment.
+        </div>
+        <div class="col-md"><div class="gnd"><div class="goal-num">03&nbsp;</div><div class="goal-name">ACCURATE</div></div>
+        Competition results are dependent on the system performing as planned.
+        </div>
+      </div></div>
+  </div>
 
     <div class="container-xxl g-0">
       <div class="row align-items-center">
         <div class="col-fluid text-center">
-          <div class="statement"><h1>CHALLENGE 1: MECHANICAL DESIGN</h1></div>
+          <div class="statement"><h1>MECHANICAL DESIGN</h1></div>
         </div>
       </div>
+      
+      <div class="row sandp500 no-pad g-0 justify-content-center align-items-center">
+        <div class="col-lg-4 text-center shuffle-test" id="whiteboards">
+          <!-- <img src="images/ab top mov.png" id="abmov"/> -->
+        </div>
+        <div class="col-lg-4 text-center proto-text">
+            <h1>
+                "The best part is no part."
+            </h1>
+            <p>
+              Extremely simplified core structure made of only 2 parts ensures rigidity under maximum possible loading. Machined in-house from twin 6.5"⌀ x 7" billets of 6061 aluminum. 94% of the stock material is removed across multiple machining steps on a lathe, CNC mill, and wire EDM. Designed by me and machined by <a href="https://www.linkedin.com/in/john-smalley/">John Smalley</a>.
+            </p>
+        </div>
+        <div class="col-lg-4 text-center" id="prototypes">
+          
+          <!-- <img src="images/prototypepile.png"/> -->
+        </div>
+        <div class="row no-pad g-0 justify-content-center align-items-center">
+          <div class="col-lg-4 text-center shuffle-test" id="abani">
+            
+          </div>
+          <div class="col-lg-4 text-center proto-text">
+              <h1>
+                  Optimized for Performance
+              </h1>
+              <p>
+                Linear action means boundary layer effects are constant across states and makes for simpler modeling. Final design optimized for exposed area and acheives 96.19% of theoretical maximum for this style of airbrake. High performance servo allows for 100 millisecond full actuation time.
+              </p>
+          </div>
+          
+          <div class="col-lg-4 text-center" id="cfdshot"></div>
+        </div>
 
+
+
+        <div class="row no-pad g-0 justify-content-center align-items-center">
+          <div class="col-lg-4 text-center shuffle-test" id="comp1">
+            
+          </div>
+          <div class="col-lg-4 text-center proto-text">
+              <h1>
+                  Advanced Composites
+              </h1>
+              <p>
+                Interfaces with roll-wrapped prepreg carbon fiber tubes, manufactured by the team. The three airbrake "leaves" were originally milled aluminum, but were later switched with lightweight forged carbon fiber versions made by <a href="https://www.linkedin.com/in/vinnessa-van-0a3a50216/">Vinessa Van</a> and her team. 
+              </p>
+          </div>
+          
+          <div class="col-lg-4 text-center" id="comp2"></div>
+        </div>
     </div>
 
+    <div class="row g-2 align-items-center">
+      <div class="col-fluid text-center">
+        <div class="statement" id="state2"><h1>CONTROL SYSTEM</h1></div>
+      </div>
+    </div>
+
+    <div class="row align-items-center csstart">
+      <div class="col-lg-6" id="twentysecs">
+        <h2>20 Seconds to Apogee</h2>
+        <p>The mechanical system, no matter how bulletproof, is only as good as the control system that runs it. This is bad news. Put mildly, this is a difficult control systems problem. <br><br> The airbrakes can only provide so much braking force, and that amount decreases throughout flight with the dynamic pressure, so it's pretty easy to wind up in a situation where even with the brakes fully extended you can't make your target. Additionally, the airbrakes can only remove energy from the system, they can't ever speed the rocket back up if it has slowed too much. So it's equally easy to put the rocket in a state where even with the airbrakes fully retracted there isn't enough energy left to make 10k ft.
+        <br><br>
+        The situation only gets worse when you consider processing power. Using commercial ARM based microcontrollers means that onboard compute is limited, and with only 20 seconds between burnout and apogee every moment is precious. Asking the flight computer to do complex math or even trigenometry is a trade off with the number of updates you can make per second in flight. Anything beyond that (Model Predictive Control, Markov Chain Monte Carlo, etc.) is out of the question.
+        </p></div>
+      <div class="col-lg-6" id="envelope"></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6" id="waypoints">
+      </div>
+      <div class="col-lg-6">
+        <p>Brainstorming over winter break, I began to develop a method for tackling this problem using a modified version of Explicit Model Predictive Control. The basic idea is this: after burnout, the flight computer takes stock of its speed and altitude and uses those to pick a pre-generated flightplan. This simulation-based flightplan will contain the theoretically "perfect" airbrake deployment setting that should allow the rocket to coast up to 10k feet, but also a list of waypoints for the rocket to aim for on its way up. This way, if the rocket is falling short of the waypoints it can bring the airbrakes in to "catch up," while if it's blowing past all of the waypoints it can extend the airbrakes further to slow things down.
+          <br><br>
+          This has the advantage of high accuracy from simulation-based planning while asking the flight computer to do very little. Tens of thousands of flight plans covering every set of possible initial conditions can be pre-generated using a more powerful computer and then simply accessed from memory during the flight. Additionally, as the waypoints are generated assuming the rocket has some amount of airbrake deployment, retraction allows the rocket to "virtually" accelerate towards the waypoints, making the risk of overshooting less perilous.
+          
+          <h5>This is super promising, but there's one major problem: the entire control scheme is based on simulations, and no commercially available rocketry simulator even allows airbrakes simulations, let alone the kind of advanced recursive flight planning required here. To pursue it, you'd have to write your own flight simulator from scratch.</h5>
+        </p>
+      </div>
+      <div class="row align-items-center csstart">
+        <div class="col-lg-6">
+          <h2>Creating a Custom Rocket Flight Sim</h2>
+        </div>
+        <div class="col-lg-6"></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col text-center"><h1>More coming soon</h1></div>
+      </div>
+    </div>
+  </div>
 
 
-    <div class="big-text-intro">
+
+    <!-- <div class="big-text-intro">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md phat-text">
@@ -130,22 +249,7 @@
             </div>
           </div>
         </div>
-    </div>
-
-    <div class="design-goals">
-        <h1>DESIGN GOALS</h1>
-        <div class="container"><div class="row">
-          <div class="col-md"><div class="gnd"><div class="goal-num">01&nbsp;</div><div class="goal-name">RELIABLE</div></div>
-          Flight & Mission Critical system, so simplicity and reproducability is key.
-          </div>
-          <div class="col-md"><div class="gnd"><div class="goal-num">02&nbsp;</div><div class="goal-name">ROBUST</div></div>
-          In the load path for launch and recovery, needs to withstand the force of the N600 motor and the shock of parachute deployment.
-          </div>
-          <div class="col-md"><div class="gnd"><div class="goal-num">03&nbsp;</div><div class="goal-name">ACCURATE</div></div>
-          Standing at SAC is dependent on the system performing as planned.
-          </div>
-        </div></div>
-    </div>
+    </div> -->
 
 
     <div class="learn-more">
@@ -169,7 +273,7 @@
       </div>
     </div> -->
 
-    <div class="gallery">
+    <!-- <div class="gallery">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md no-pad">
@@ -186,10 +290,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <section class="footer">
-      <div id="copyright">Copyright 2022 Quinn Edwards.</div>
+      <div id="copyright">Copyright 2023 Quinn Edwards.</div>
     </section>
   </body>
 </html>

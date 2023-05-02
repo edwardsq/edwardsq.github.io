@@ -34,7 +34,7 @@ table {
 .proj-splash{
     width: 100%;
     height: 100vh;
-    background-image: url("../images/w_mohsin.JPG");
+    background-image: url("../images/rocket_full.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,16 +189,79 @@ table {
     margin-bottom: 20px;
 }
 
+.proto-text p a{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
 .sandp500{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #whiteboards{
     /* min-height: 600px; */
     /* background-attachment: fixed;
-    background-position: 50% 50%;
-    background-image: url("../images/diffboard.png");
-    background-size: cover; */
+    background-position: 50% 50%;*/
+    background-image: url("../images/ab_twopieces.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    min-height: 400px;
+}
+
+@keyframes ab-shuffle {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}
+
+.tinydancer{
+    animation: ab-shuffle 1s infinite;
+}
+
+#abmov{
+    max-height: 200px;
+    position: relative;
+    top: 0;
+    
+}
+
+#abani{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/abanicrop2.gif");
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding: 20px;
+}
+
+#cfdshot{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/airbrakecfd.png");
+    background-repeat: no-repeat;
+    min-height: 300px;
+    padding: 20px;
+}
+
+#comp1{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/compgif.gif");
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding: 20px;
+}
+#comp2{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/compstill.jpg");
+    background-repeat: no-repeat;
+    min-height: 400px;
     padding: 20px;
 }
 
@@ -209,13 +272,38 @@ table {
 }
 
 #prototypes{
-    /* background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    width: auto;
-    background-image: url("../images/proto-photo-test.png");
-    min-height: 400px; */
+    background-image: url("../images/abmach.gif");
+    background-repeat: no-repeat;
+    min-height: 400px;
     padding: 20px;
+}
+
+#envelope{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/envelope_graphic4.png");
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding: 20px;
+}
+
+#waypoints{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/adjustment_graphic.png");
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.quadimg{
+    min-height: 200px;
+    background-image: url(/images/falcheav.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .shoe-reveal{
@@ -635,11 +723,24 @@ td{
 
 .phold{
     display: flex;
-    background-color: #030040;
+    background-image: url(/images/rocket_error_graphic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 300px;
     width: 400px;
     border-radius: 10px;
+}
 
+.phold2{
+    display: flex;
+    background-image: url(/images/engaged_graphic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
 }
 
 .image-ani{
@@ -688,13 +789,34 @@ td{
 }
 
 .statement{
-    height: 80vh;
+    height: 85vh;
     width: 100%;
-    background-color: #030040;
+    background-image: url("../images/abdraw.gif");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     color: white;
     margin: none;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+}
+
+#state2{
+    background-image: url("../images/controlsani3.gif");
+    margin-top: 20px;
+}
+
+.csstart{
+    margin-top: 60px;
+}
+
+.statement > h1{
+    background-color: #030040;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

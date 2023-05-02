@@ -17,6 +17,23 @@
     <script src="/js/fadeandtypingscript.js"></script>
     <title>Duke Electric Vehicles</title>
     <link rel="shortcut icon" href="images/QE Logo Circle.png" />
+    <script>
+      $(document).ready(function(){
+      var $hamburger = $(".hamburger");
+      var $menu = $(".menu");
+      var $alreadyhere = $(".already-here");
+      $hamburger.on("click", function(e) {
+      $hamburger.toggleClass("is-active");
+      $menu.fadeToggle().css("display","flex");
+      // Do something else, like open/close menu
+      });
+      $alreadyhere.on("click", function(e) {
+      $hamburger.toggleClass("is-active");
+      $menu.fadeToggle().css("display","flex");
+      // Do something else, like open/close menu
+      });
+      });
+    </script>
   </head>
   <body>
     
