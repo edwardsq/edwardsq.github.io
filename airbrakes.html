@@ -156,7 +156,7 @@
                 "The best part is no part."
             </h1>
             <p>
-              Simple core structure made of only 2 parts ensures rigidity under maximum possible loading. Machined in-house from twin 6.5"⌀ x 7" billets of 6061 aluminum. 94% of the stock material is removed across multiple machining steps on a lathe, CNC mill, and wire EDM. Designed by me and machined by <a href="https://www.linkedin.com/in/john-smalley/">John Smalley</a>.
+              Simple core structure made of only 2 parts ensures rigidity under maximum possible loading. Machined in-house from twin 6.5"⌀ x 7" billets of 6061 aluminum. 94% of the stock material is removed across multiple machining steps on a lathe, CNC mill, and wire EDM. Designed by me and machined by <a href="https://www.linkedin.com/in/john-smalley/" target="_blank">John Smalley</a>.
             </p>
         </div>
         <div class="col-lg-4 text-center" id="prototypes">
@@ -190,7 +190,7 @@
                   Advanced Composites
               </h1>
               <p>
-                Interfaces with roll-wrapped prepreg carbon fiber tubes, manufactured by the team. The three airbrake "leaves" were originally milled aluminum, but were later switched with lightweight forged carbon fiber versions made by <a href="https://www.linkedin.com/in/vinnessa-van-0a3a50216/">Vinessa Van</a> and her team. 
+                Interfaces with roll-wrapped prepreg carbon fiber tubes, manufactured by the team. The three airbrake "leaves" were originally milled aluminum, but were later switched with lightweight forged carbon fiber versions made by <a href="https://www.linkedin.com/in/vinnessa-van-0a3a50216/" target="_blank">Vinessa Van</a> and her team. 
               </p>
           </div>
           
@@ -205,7 +205,7 @@
     </div>
 
     <div class="row align-items-center csstart">
-      <div class="col-lg-6" id="twentysecs">
+      <div class="col-lg-6 p-5" id="twentysecs">
         <h2>20 Seconds to Apogee</h2>
         <p>The mechanical system, no matter how bulletproof, is only as good as the control system that runs it. This is bad news. Put mildly, this is a difficult control systems problem. <br><br> The airbrakes can only provide so much braking force, and that amount decreases throughout flight with the dynamic pressure, so it's pretty easy to wind up in a situation where even with the brakes fully extended you can't make your target. Additionally, the airbrakes can only remove energy from the system, they can't ever speed the rocket back up if it has slowed too much. So it's equally easy to put the rocket in a state where even with the airbrakes fully retracted there isn't enough energy left to make 10k ft.
         <br><br>
@@ -214,9 +214,8 @@
       <div class="col-lg-6" id="envelope"></div>
     </div>
     <div class="row align-items-center">
-      <div class="col-lg-6" id="waypoints">
-      </div>
-      <div class="col-lg-6">
+      
+      <div class="col-lg-6 p-5">
         <p>Brainstorming over winter break, I began to develop a method for tackling this problem using a modified version of Explicit Model Predictive Control. The basic idea is this: after burnout, the flight computer takes stock of its speed and altitude and uses those to pick a pre-generated flightplan. This simulation-based flightplan will contain the theoretically "perfect" airbrake deployment setting that should allow the rocket to coast up to 10k feet, but also a list of waypoints for the rocket to aim for on its way up. This way, if the rocket is falling short of the waypoints it can bring the airbrakes in to "catch up," while if it's blowing past all of the waypoints it can extend the airbrakes further to slow things down.
           <br><br>
           This has the advantage of high accuracy from simulation-based planning while asking the flight computer to do very little. Tens of thousands of flight plans covering every set of possible initial conditions can be pre-generated using a more powerful computer and then simply accessed from memory during the flight. Additionally, as the waypoints are generated assuming the rocket has some amount of airbrake deployment, retraction allows the rocket to "virtually" accelerate towards the waypoints, making the risk of overshooting less perilous.
@@ -224,19 +223,21 @@
           <h5>This is super promising, but there's one major problem: the entire control scheme is based on simulations, and no commercially available rocketry simulator even allows airbrakes simulations, let alone the kind of large-scale parametric flight planning required here. To pursue it, you'd have to write your own flight simulator from scratch.</h5>
         </p>
       </div>
+      <div class="col-lg-6 order-md-first" id="waypoints">
+      </div>
       <div class="row align-items-center csstart">
-        <div class="col-lg-6">
+        <div class="col-lg-6 p-4">
           <h2>Creating a Custom Rocket Flight Sim</h2>
           <p>
-            Needing a flight simulator to generate flight plans, test different control methods and tune gains, I opened Python and got to work. Thankfully, I'm wasn't starting from zero: OpenRocket, one of the most popular simulators, is open source and was developed as part of a masters thesis. My simulator is based heavily on the available <a href="https://openrocket.sourceforge.net/thesis.pdf">thesis paper</a>, the OpenRocket <a href="https://github.com/openrocket/openrocket/tree/ac03049277f6d2e7e77f194da7c553a1854e3b3b">source code</a>, and the work of NASA's <a href = "https://www.nar.org/wp-content/uploads/2016/01/barrowman_cp_extended_edition.pdf">Jim Barrowman</a>.
+            Needing a flight simulator to generate flight plans, test different control methods and tune gains, I opened Python and got to work. Thankfully, I wasn't starting from zero: OpenRocket, one of the most popular simulators, is open source and was developed as part of a masters thesis. My simulator is based heavily on the available <a href="https://openrocket.sourceforge.net/thesis.pdf" target="_blank">thesis paper</a>, the OpenRocket <a href="https://github.com/openrocket/openrocket/tree/ac03049277f6d2e7e77f194da7c553a1854e3b3b" target="_blank">source code</a>, and the work of NASA's <a href = "https://www.nar.org/wp-content/uploads/2016/01/barrowman_cp_extended_edition.pdf" target="_blank">Jim Barrowman</a>.
           <br><br>
-           The resulting simulator is 3-DOF, with two spatial dimensions and one angular dimension for the rocket's pitch. It uses the 4th order Runge-Kutta method to solve the differential equations of flight and implements realistic wind, drag, and normal forces for our rocket geometry. The drag force of the airbrake was solved numerically in ANSYS Fluent by <a href="https://www.linkedin.com/in/sage-cooley/">Sage Cooley</a> for a wide variety of deployment percentages and dynamic pressures, and my simulator interpolates between those values to provide a continuous estimate of drag.
+           The resulting simulator is 3-DOF, with two spatial dimensions and one angular dimension for the rocket's pitch. It uses the 4th order Runge-Kutta method to solve the differential equations of flight and implements realistic wind, drag, and normal forces for our rocket geometry. The drag force of the airbrake was solved numerically in ANSYS Fluent by <a href="https://www.linkedin.com/in/sage-cooley/" target="_blank">Sage Cooley</a> for a wide variety of deployment percentages and dynamic pressures, and my simulator interpolates between those values to provide a continuous estimate of drag.
           </p>
         </div>
         <div class="col-lg-6" id="console"></div>
       </div>
       <div class="row align-items-center csstart">
-        <div class="col-lg-6">
+        <div class="col-lg-6 p-4">
           <p>
             Flight plans are generated recursively, numerically simulating a flight and adjusting the deployment percentage incrementally to hone in on a 10,000 foot apogee. These flight plans are each then "stressed," with a separate simulation attempting to follow the flight plan under different drag or wind conditions, uncertain starting position or with greater than expected controller lag to see how they perform. Before flight, flight plans are generated for a huge array of possible initial conditions for storage on the flight computer. As generation of a full set of 16,384 flight plans takes close to 48 hours, the array can be split up across multiple computers and later composited into a single set to speed up generation.
           </p>
@@ -251,11 +252,11 @@
       </div>
 
       <div class="row align-items-center csstart">
-        <div class="col-lg-6">
+        <div class="col-lg-6 p-4">
           <p>
             To run this control system on the flight, a few other members of the team developed a flight computer complete with all of the needed sensors and two microcontrollers.
           </p>
-          <h5>32 hours before our test flight, disaster struck: a missing inductor on a buck converter exposed the entire board to battery voltage and the entire thing was fried.</h5>
+          <h5>32 hours before our test flight, disaster struck: a missing inductor on a buck converter exposed the board to battery voltage and the entire thing was fried.</h5>
           <p>Thankfully, I had just happened to create a prototype flight computer PCB a few months prior hoping to test out some state estimation code using a Teensy 4.1 and various component breakout boards. Although it was rough around the edges (the board was designed in an evening and was never expected to see flight) we were able to port all of our code and use it on our test launch, providing us with invaluable data moving forward. I'm currently working on a revision of this board which will fly at Spaceport America Cup, check back here for updates when that is finished.</p>
         </div>
         <div class="col-lg-6" id="fccandid"></div>

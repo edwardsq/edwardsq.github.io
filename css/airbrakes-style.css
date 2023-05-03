@@ -649,12 +649,12 @@ td{
     background-position: center;
     transition:0.3s;
 }
-/* .gallery-img:hover{
+.gallery-img:hover{
     transform: scale(1.05);
     position: relative;
     z-index: 2;
     overflow-x: hidden;
-} */
+}
 #img-1{
     background-image: url("../images/setpgraph.png");
 }
@@ -692,6 +692,7 @@ td{
     left: 35px;
     transform: rotate(-90deg);
     transition: 0.3s;
+    opacity: 0;
 }
 .footer
   {
@@ -844,6 +845,8 @@ td{
 .csstart{
     margin-top: 60px;
 }
+
+
 
 .csstart div p a{
     text-decoration: underline;
