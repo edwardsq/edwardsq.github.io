@@ -298,6 +298,33 @@ table {
     padding: 20px;
 }
 
+#console{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/consolerun2.gif");
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding: 20px;
+}
+
+#multigen{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/multigen.jpg");
+    background-repeat: no-repeat;
+    min-height: 300px;
+    padding: 20px;
+}
+
+#fccandid{
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/fcmaybe.JPG");
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding: 20px;
+}
+
 .quadimg{
     min-height: 200px;
     background-image: url(/images/falcheav.jpg);
@@ -629,26 +656,26 @@ td{
     overflow-x: hidden;
 } */
 #img-1{
-    background-image: url("../images/mohsingif\ vsmall.gif");
+    background-image: url("../images/setpgraph.png");
 }
 
 #img-2{
-    background-image: url("../images/whooshstick.JPG");
+    background-image: url("../images/abtable.jpg");
 }
 #img-3{
-    background-image: url("../images/w_roll.JPG");
+    background-image: url("../images/shinytop.jpg");
 }
 #img-4{
-    background-image: url("../images/w_wilk.JPG");
+    background-image: url("../images/shinytop2.jpg");
 }
 #img-5{
-    background-image: url("../images/mework.JPEG");
+    background-image: url("../images/errorgraph.png");
 }
 #img-6{
-    background-image: url("../images/w_out.JPG");
+    background-image: url("../images/testfit.jpg");
 }
 #img-7{
-    background-image: url("../images/w_night.JPG");
+    background-image: url("../images/trajectories.png");
 }
 
 
@@ -809,8 +836,18 @@ td{
     margin-top: 20px;
 }
 
+#state3{
+    background-image: url("../images/fcanimaybe.gif");
+    margin-top: 20px;
+}
+
 .csstart{
     margin-top: 60px;
+}
+
+.csstart div p a{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .statement > h1{
